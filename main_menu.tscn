@@ -16,7 +16,7 @@ text = "Cyberland"
 [node name="AvatarBtn" type="Button" parent="."]
 offset_left = 104.0
 offset_top = 264.0
-offset_right = 215.0
+offset_right = 207.0
 offset_bottom = 315.0
 scale = Vector2(1.00508, 1.10458)
 text = "Avatar"
@@ -24,13 +24,13 @@ text = "Avatar"
 [node name="FilesBtn" type="Button" parent="."]
 offset_left = 104.0
 offset_top = 456.0
-offset_right = 212.0
+offset_right = 207.0
 offset_bottom = 507.0
 scale = Vector2(1.00508, 1.10458)
 text = "Files"
 
 [node name="CollectionsBtn" type="Button" parent="."]
-offset_left = 368.0
+offset_left = 376.0
 offset_top = 264.0
 offset_right = 480.0
 offset_bottom = 320.0
@@ -38,18 +38,26 @@ text = "Collections
 "
 
 [node name="ShopBtn" type="Button" parent="."]
-offset_left = 368.0
+offset_left = 376.0
 offset_top = 456.0
 offset_right = 480.0
 offset_bottom = 512.0
 text = "Shop"
 
 [node name="QuestionsBtn" type="Button" parent="."]
-offset_left = 368.0
+offset_left = 376.0
 offset_top = 648.0
 offset_right = 480.0
 offset_bottom = 704.0
 text = "Questions"
+
+[node name="ResourcesBtn" type="Button" parent="."]
+offset_left = 104.0
+offset_top = 648.0
+offset_right = 207.0
+offset_bottom = 699.0
+scale = Vector2(1.00508, 1.10458)
+text = "Resources"
 
 [connection signal="pressed" from="MapBtn" to="." method="_on_map_btn_pressed"]
 [connection signal="pressed" from="AvatarBtn" to="." method="_on_avatar_btn_pressed"]
@@ -57,3 +65,4 @@ text = "Questions"
 [connection signal="pressed" from="CollectionsBtn" to="." method="_on_collections_btn_pressed"]
 [connection signal="pressed" from="ShopBtn" to="." method="_on_shop_btn_pressed"]
 [connection signal="pressed" from="QuestionsBtn" to="." method="_on_questions_btn_pressed"]
+[connection signal="pressed" from="ResourcesBtn" to="." method="_on_resources_btn_pressed"]
