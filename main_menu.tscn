@@ -59,6 +59,12 @@ offset_bottom = 699.0
 scale = Vector2(1.00508, 1.10458)
 text = "Resources"
 
+[node name="ProgressBar" type="ProgressBar" parent="."]
+offset_left = 256.0
+offset_top = 520.0
+offset_right = 328.0
+offset_bottom = 547.0
+
 [connection signal="pressed" from="MapBtn" to="." method="_on_map_btn_pressed"]
 [connection signal="pressed" from="AvatarBtn" to="." method="_on_avatar_btn_pressed"]
 [connection signal="pressed" from="FilesBtn" to="." method="_on_files_btn_pressed"]

@@ -22,14 +22,11 @@ func _on_shop_btn_pressed():
 func _on_questions_btn_pressed():
 	get_tree().change_scene_to_file("")
 
-
 func _on_avatar_btn_pressed():
 	get_tree().change_scene_to_file("")
 
-
 func _on_files_btn_pressed():
 	get_tree().change_scene_to_file("res://files.tscn")
-
 
 func _on_resources_btn_pressed():
 	get_tree().change_scene_to_file("")
