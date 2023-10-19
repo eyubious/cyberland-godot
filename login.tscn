@@ -8,33 +8,40 @@
 script = ExtResource("1_082vf")
 
 [node name="MapBtn" type="Button" parent="."]
-offset_left = 64.0
+offset_left = 24.0
 offset_top = 960.0
-offset_right = 144.0
+offset_right = 104.0
 offset_bottom = 1008.0
 theme = SubResource("Theme_ac7ox")
 text = "Map"
 
 [node name="FilesBtn" type="Button" parent="."]
-offset_left = 432.0
+offset_left = 376.0
 offset_top = 960.0
-offset_right = 512.0
+offset_right = 456.0
 offset_bottom = 1008.0
 text = "Files"
 
 [node name="MenuBtn" type="Button" parent="."]
-offset_left = 312.0
+offset_left = 264.0
 offset_top = 960.0
-offset_right = 400.0
+offset_right = 352.0
 offset_bottom = 1008.0
 text = "Menu"
 
 [node name="CollectionsBtn" type="Button" parent="."]
-offset_left = 176.0
+offset_left = 128.0
 offset_top = 960.0
-offset_right = 288.0
+offset_right = 240.0
 offset_bottom = 1008.0
 text = "Collections"
+
+[node name="Button" type="Button" parent="."]
+offset_left = 480.0
+offset_top = 960.0
+offset_right = 552.0
+offset_bottom = 1008.0
+text = "Locked"
 
 [connection signal="pressed" from="MapBtn" to="." method="_on_map_btn_pressed"]
 [connection signal="pressed" from="FilesBtn" to="." method="_on_files_btn_pressed"]
