@@ -5,8 +5,12 @@
 [node name="Collections" type="Node2D"]
 
 [node name="Label" type="Label" parent="."]
-offset_right = 40.0
-offset_bottom = 23.0
-text = "My Collections"
+offset_left = 192.0
+offset_top = 64.0
+offset_right = 384.0
+offset_bottom = 120.0
+text = "My Collection"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="MainMenu" parent="." instance=ExtResource("1_leggr")]
