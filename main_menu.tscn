@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://dmc6hldljd4cl"]
+[gd_scene load_steps=3 format=3 uid="uid://dmc6hldljd4cl"]
 
 [ext_resource type="Script" path="res://main_menu.gd" id="1_o7myp"]
+[ext_resource type="Texture2D" uid="uid://c61daik220bkq" path="res://Images/avatar.png" id="2_37vxc"]
 
 [node name="MainMenu" type="Node2D"]
 script = ExtResource("1_o7myp")
@@ -59,10 +60,15 @@ scale = Vector2(1.00508, 1.10458)
 text = "Resources"
 
 [node name="ProgressBar" type="ProgressBar" parent="."]
-offset_left = 256.0
+offset_left = 248.0
 offset_top = 520.0
 offset_right = 328.0
 offset_bottom = 547.0
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(276, 444.25)
+scale = Vector2(0.964286, 0.966926)
+texture = ExtResource("2_37vxc")
 
 [connection signal="pressed" from="MapBtn" to="." method="_on_map_btn_pressed"]
 [connection signal="pressed" from="AvatarBtn" to="." method="_on_avatar_btn_pressed"]

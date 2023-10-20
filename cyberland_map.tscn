@@ -9,4 +9,4 @@ offset_right = 40.0
 offset_bottom = 23.0
 text = "Welcome to Cyberland"
 
-[node name="MainMenu" parent="." instance=ExtResource("1_0f83g")]
+[node name="BottomMenu" parent="." instance=ExtResource("1_0f83g")]
