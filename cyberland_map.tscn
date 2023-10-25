@@ -5,14 +5,76 @@
 
 [node name="CyberlandMap" type="Node2D"]
 
-[node name="Label" type="Label" parent="."]
-offset_right = 40.0
-offset_bottom = 23.0
-text = "Cyberland Map"
-
 [node name="BottomMenu" parent="." instance=ExtResource("1_0f83g")]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(279.306, 475.103)
-scale = Vector2(0.783389, 0.937465)
+position = Vector2(284.306, 469.119)
+scale = Vector2(0.793389, 0.949431)
 texture = ExtResource("2_fpdca")
+
+[node name="Task1_Button" type="Button" parent="."]
+offset_left = 98.0
+offset_top = 848.0
+offset_right = 207.0
+offset_bottom = 904.0
+text = "Task 1"
+
+[node name="Task2_Button" type="Button" parent="."]
+offset_left = 44.0
+offset_top = 676.0
+offset_right = 143.0
+offset_bottom = 734.0
+text = "Task 2"
+
+[node name="Task3_Button" type="Button" parent="."]
+offset_left = 408.0
+offset_top = 627.0
+offset_right = 520.0
+offset_bottom = 686.0
+text = "Task 3
+"
+
+[node name="Task4_Button" type="Button" parent="."]
+offset_left = 38.0
+offset_top = 494.0
+offset_right = 139.0
+offset_bottom = 555.0
+text = "Task 4"
+
+[node name="Task5_Button" type="Button" parent="."]
+offset_left = 458.0
+offset_top = 463.0
+offset_right = 559.0
+offset_bottom = 527.0
+text = "Task 5"
+
+[node name="Task6_Button" type="Button" parent="."]
+offset_left = 152.0
+offset_top = 345.0
+offset_right = 255.0
+offset_bottom = 410.0
+text = "Task 6"
+
+[node name="Task7_Button" type="Button" parent="."]
+offset_left = 372.0
+offset_top = 186.0
+offset_right = 473.0
+offset_bottom = 244.0
+text = "Task 7
+"
+
+[node name="Task8_Button" type="Button" parent="."]
+offset_left = 12.0
+offset_top = 158.0
+offset_right = 114.0
+offset_bottom = 224.0
+text = "Task 8
+"
+
+[node name="Task9_Button" type="Button" parent="."]
+offset_left = 339.0
+offset_top = 25.0
+offset_right = 454.0
+offset_bottom = 88.0
+text = "Task 9
+"
