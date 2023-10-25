@@ -1,0 +1,38 @@
+[gd_scene load_steps=6 format=3 uid="uid://cqm28s5nek0n2"]
+
+[ext_resource type="Script" path="res://start_seq/start_page.gd" id="1_xgmka"]
+[ext_resource type="Texture2D" uid="uid://d3nmoagv0biv0" path="res://Images/robot_rightHand.png" id="2_7qucm"]
+[ext_resource type="PackedScene" uid="uid://b6jhxxvvwogk7" path="res://login.tscn" id="3_5ym3l"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_57qnh"]
+bg_color = Color(0.619608, 0.619608, 0.619608, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[sub_resource type="Theme" id="Theme_0qpwl"]
+Button/styles/hover = SubResource("StyleBoxFlat_57qnh")
+Button/styles/normal = SubResource("StyleBoxFlat_57qnh")
+Button/styles/pressed = SubResource("StyleBoxFlat_57qnh")
+
+[node name="StartPage" type="Node2D"]
+script = ExtResource("1_xgmka")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(168, 488)
+scale = Vector2(1.16364, 1.13661)
+texture = ExtResource("2_7qucm")
+
+[node name="startBtn" type="Button" parent="."]
+z_index = -1
+offset_left = 184.0
+offset_top = 464.0
+offset_right = 440.0
+offset_bottom = 560.0
+theme = SubResource("Theme_0qpwl")
+text = "<< Start >>"
+
+[node name="BottomMenu" parent="." instance=ExtResource("3_5ym3l")]
+
+[connection signal="pressed" from="startBtn" to="." method="_on_start_btn_pressed"]
