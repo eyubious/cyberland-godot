@@ -1,7 +1,11 @@
 [gd_scene load_steps=3 format=3 uid="uid://dmc6hldljd4cl"]
 
 [ext_resource type="Script" path="res://main_menu.gd" id="1_o7myp"]
+<<<<<<< Updated upstream
 [ext_resource type="Texture2D" uid="uid://c61daik220bkq" path="res://Images/avatar.png" id="2_37vxc"]
+=======
+[ext_resource type="Texture2D" path="res://Images/avatar.png" id="2_37vxc"]
+>>>>>>> Stashed changes
 
 [node name="MainMenu" type="Node2D"]
 script = ExtResource("1_o7myp")
