@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://start_seq/start_page.gd" id="1_xgmka"]
 [ext_resource type="Texture2D" uid="uid://d3nmoagv0biv0" path="res://Images/robot_rightHand.png" id="2_7qucm"]
-[ext_resource type="PackedScene" uid="uid://b6jhxxvvwogk7" path="res://login.tscn" id="3_5ym3l"]
+[ext_resource type="PackedScene" path="res://login.tscn" id="3_5ym3l"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_57qnh"]
 bg_color = Color(0.619608, 0.619608, 0.619608, 1)
