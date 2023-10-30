@@ -24,3 +24,4 @@ func _on_menu_btn_pressed():
 
 func _on_files_btn_pressed():
 	get_tree().change_scene_to_file("res://files.tscn")
+

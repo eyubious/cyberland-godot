@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://dedxpp5gwpgve"]
+
+[ext_resource type="Script" path="res://task1.gd" id="1_goeqj"]
+[ext_resource type="VideoStream" path="res://Images/videoforgame.ogv" id="1_idbem"]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(-1, 2)
+script = ExtResource("1_goeqj")
+metadata/_edit_horizontal_guides_ = [14208.0]
+metadata/_edit_vertical_guides_ = []
+
+[node name="MapBtn" type="Button" parent="."]
+offset_left = 177.0
+offset_top = 61.0
+offset_right = 419.0
+offset_bottom = 125.0
+text = "Task 1: Intro To Cyber Bullying"
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="MapBtn"]
+layout_mode = 0
+offset_left = -127.0
+offset_top = 104.0
+offset_right = 721.0
+offset_bottom = 584.0
+scale = Vector2(0.578471, 0.876942)
+stream = ExtResource("1_idbem")
+autoplay = true
+expand = true
