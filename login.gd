@@ -24,3 +24,7 @@ func _on_menu_btn_pressed():
 
 func _on_files_btn_pressed():
 	get_tree().change_scene_to_file("res://files.tscn")
+
+
+func _on_task_1_button_pressed():
+	get_tree().change_scene_to_file("res://task1.tscn")

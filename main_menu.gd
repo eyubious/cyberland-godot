@@ -17,7 +17,7 @@ func _on_collections_btn_pressed():
 	get_tree().change_scene_to_file("res://collections.tscn")
 
 func _on_shop_btn_pressed():
-	get_tree().change_scene_to_file("res://task1.tscn")
+	get_tree().change_scene_to_file("")
 
 func _on_questions_btn_pressed():
 	get_tree().change_scene_to_file("")
