@@ -1,16 +1,27 @@
-[gd_scene load_steps=2 format=3 uid="uid://clrnbtphdmuc7"]
+[gd_scene load_steps=4 format=3 uid="uid://clrnbtphdmuc7"]
 
 [ext_resource type="PackedScene" uid="uid://b6jhxxvvwogk7" path="res://login.tscn" id="1_leggr"]
+[ext_resource type="FontVariation" uid="uid://dnjsxy85hmidx" path="res://roboto_medium.tres" id="2_v0jji"]
+[ext_resource type="Texture2D" uid="uid://bc6savh2oasph" path="res://Images/cyberland_backgrounds.png" id="2_wvvxr"]
 
 [node name="Collections" type="Node2D"]
 
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(288, 512)
+scale = Vector2(1.54774, 1.24171)
+texture = ExtResource("2_wvvxr")
+metadata/_edit_lock_ = true
+
 [node name="Label" type="Label" parent="."]
-offset_left = 192.0
-offset_top = 64.0
-offset_right = 384.0
-offset_bottom = 120.0
+z_index = 1
+offset_left = 72.0
+offset_right = 501.0
+offset_bottom = 86.0
+theme_override_fonts/font = ExtResource("2_v0jji")
+theme_override_font_sizes/font_size = 50
 text = "My Collection"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="BottonMenu" parent="." instance=ExtResource("1_leggr")]
+z_index = 1
