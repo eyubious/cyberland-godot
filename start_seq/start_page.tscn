@@ -1,8 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://cqm28s5nek0n2"]
+[gd_scene load_steps=8 format=3 uid="uid://cqm28s5nek0n2"]
 
 [ext_resource type="Script" path="res://start_seq/start_page.gd" id="1_xgmka"]
 [ext_resource type="Texture2D" uid="uid://d3nmoagv0biv0" path="res://Images/robot_rightHand.png" id="2_7qucm"]
+[ext_resource type="Texture2D" uid="uid://byu4h6307w71s" path="res://Images/city_blue.png" id="2_tycv5"]
 [ext_resource type="PackedScene" uid="uid://b6jhxxvvwogk7" path="res://login.tscn" id="3_5ym3l"]
+[ext_resource type="FontFile" uid="uid://c8mehlkrpv7vi" path="res://Roboto-Medium.ttf" id="3_uaktd"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_57qnh"]
 bg_color = Color(0.619608, 0.619608, 0.619608, 1)
@@ -19,18 +21,26 @@ Button/styles/pressed = SubResource("StyleBoxFlat_57qnh")
 [node name="StartPage" type="Node2D"]
 script = ExtResource("1_xgmka")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="cityBackground" type="Sprite2D" parent="."]
+position = Vector2(336, 512)
+scale = Vector2(0.903388, 0.888163)
+texture = ExtResource("2_tycv5")
+
+[node name="avatar" type="Sprite2D" parent="."]
+z_index = 2
 position = Vector2(168, 488)
 scale = Vector2(1.16364, 1.13661)
 texture = ExtResource("2_7qucm")
 
 [node name="startBtn" type="Button" parent="."]
-z_index = -1
+z_index = 1
 offset_left = 184.0
 offset_top = 464.0
 offset_right = 440.0
 offset_bottom = 560.0
 theme = SubResource("Theme_0qpwl")
+theme_override_fonts/font = ExtResource("3_uaktd")
+theme_override_font_sizes/font_size = 30
 text = "<< Start >>"
 
 [node name="BottomMenu" parent="." instance=ExtResource("3_5ym3l")]
