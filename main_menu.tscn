@@ -1,11 +1,16 @@
-[gd_scene load_steps=3 format=3 uid="uid://dmc6hldljd4cl"]
+[gd_scene load_steps=4 format=3 uid="uid://bdn6ocaptom3l"]
 
 [ext_resource type="Script" path="res://main_menu.gd" id="1_o7myp"]
 [ext_resource type="Texture2D" uid="uid://c61daik220bkq" path="res://Images/avatar.png" id="2_37vxc"]
+[ext_resource type="Texture2D" uid="uid://b1iov6mmay580" path="res://Images/cityscape.png" id="2_n7we0"]
 
 [node name="MainMenu" type="Node2D"]
 script = ExtResource("1_o7myp")
 metadata/_edit_horizontal_guides_ = []
+
+[node name="backgroundCity" type="Sprite2D" parent="."]
+position = Vector2(288, 512)
+texture = ExtResource("2_n7we0")
 
 [node name="MapBtn" type="Button" parent="."]
 offset_left = 232.0
@@ -65,7 +70,7 @@ offset_top = 520.0
 offset_right = 328.0
 offset_bottom = 547.0
 
-[node name="Sprite2D2" type="Sprite2D" parent="."]
+[node name="avatarImage" type="Sprite2D" parent="."]
 position = Vector2(276, 444.25)
 scale = Vector2(0.964286, 0.966926)
 texture = ExtResource("2_37vxc")
