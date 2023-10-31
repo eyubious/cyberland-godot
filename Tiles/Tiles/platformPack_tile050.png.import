@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bc6savh2oasph"
-path="res://.godot/imported/cyberland_backgrounds.png-4a3f6dab28378fc7bab8a44281d74a12.ctex"
+uid="uid://ccimly67lrvbs"
+path="res://.godot/imported/platformPack_tile050.png-e083cf8c77bc4cbd378d7000dec55bf2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Images/cyberland_backgrounds.png"
-dest_files=["res://.godot/imported/cyberland_backgrounds.png-4a3f6dab28378fc7bab8a44281d74a12.ctex"]
+source_file="res://Tiles/Tiles/platformPack_tile050.png"
+dest_files=["res://.godot/imported/platformPack_tile050.png-e083cf8c77bc4cbd378d7000dec55bf2.ctex"]
 
 [params]
 
