@@ -1,8 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://dmc6hldljd4cl"]
+[gd_scene load_steps=4 format=3 uid="uid://bdn6ocaptom3l"]
 
 [ext_resource type="Script" path="res://main_menu.gd" id="1_o7myp"]
 [ext_resource type="Texture2D" uid="uid://c61daik220bkq" path="res://Images/avatar.png" id="2_37vxc"]
-[ext_resource type="Texture2D" uid="uid://f2h8unk1m58v" path="res://Images/cityscape.png" id="2_n7we0"]
+[ext_resource type="Texture2D" uid="uid://b1iov6mmay580" path="res://Images/cityscape.png" id="2_n7we0"]
 
 [node name="MainMenu" type="Node2D"]
 script = ExtResource("1_o7myp")
