@@ -6,13 +6,13 @@
 
 [node name="Collections" type="Node2D"]
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="background" type="Sprite2D" parent="."]
 position = Vector2(288, 512)
 scale = Vector2(1.54774, 1.24171)
 texture = ExtResource("2_wvvxr")
 metadata/_edit_lock_ = true
 
-[node name="Label" type="Label" parent="."]
+[node name="Title" type="Label" parent="."]
 z_index = 1
 offset_left = 72.0
 offset_right = 501.0

@@ -9,3 +9,7 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
+
+
+func _on_next_task_pressed():
+	get_tree().change_scene_to_file("res://Missions/mission_1/mission_1_game/game.tscn")
