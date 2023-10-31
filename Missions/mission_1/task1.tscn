@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://cqhg24jyiqphr"]
+[gd_scene load_steps=4 format=3 uid="uid://cqhg24jyiqphr"]
 
 [ext_resource type="Script" path="res://Missions/mission_1/task1.gd" id="1_a03ka"]
 [ext_resource type="VideoStream" path="res://Images/videoforgame.ogv" id="1_idbem"]
+[ext_resource type="Texture2D" uid="uid://dtjw1sblnqarg" path="res://button.webp" id="3_xc0ly"]
 
 [node name="Node2D" type="Node2D"]
 position = Vector2(-1, 2)
@@ -18,11 +19,29 @@ theme_override_font_sizes/font_size = 25
 text = "Mission 1: Intro To Cyber Bullying"
 
 [node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
-offset_left = 50.0
-offset_top = 165.0
-offset_right = 898.0
-offset_bottom = 645.0
+offset_left = 27.0
+offset_top = 155.0
+offset_right = 943.0
+offset_bottom = 506.0
 scale = Vector2(0.578471, 0.876942)
 stream = ExtResource("1_idbem")
-autoplay = true
 expand = true
+
+[node name="Button" type="Button" parent="VideoStreamPlayer"]
+offset_left = 69.1478
+offset_top = 482.358
+offset_right = 810.148
+offset_bottom = 930.358
+text = "Continue"
+icon = ExtResource("3_xc0ly")
+
+[node name="Button2" type="Button" parent="VideoStreamPlayer"]
+layout_mode = 0
+offset_left = 228.188
+offset_top = 556.479
+offset_right = 534.188
+offset_bottom = 614.479
+text = "Pause Play"
+
+[connection signal="pressed" from="VideoStreamPlayer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="VideoStreamPlayer/Button2" to="." method="_on_button_2_pressed"]
