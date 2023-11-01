@@ -1,11 +1,9 @@
 extends Node2D
 
 var video_player : VideoStreamPlayer
-var continue_button : Button
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	continue_button = $ContinueButton
 	
 	start_video_with_delay()
 
@@ -20,11 +18,11 @@ func _on_button_pressed():
 
 #code if you want play/stop but if you resume video will start all over.
 #func _on_button_2_pressed():
-	#var video_player = $VideoStreamPlayer
-	#if video_player.is_playing():
-	#	video_player.stop()  # Pause the video if it's currently playing
-	#else:
-	#	video_player.play()  # Resume the video if it's currently paused
+#	var video_player = $VideoStreamPlayer
+#	if video_player.is_playing():
+#		video_player.stop()  # Pause the video if it's currently playing
+#	else:
+#		video_player.play()  # Resume the video if it's currently paused
 	
 #TODO find a way to make button appear after video is done 
 
