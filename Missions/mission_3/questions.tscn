@@ -1,0 +1,30 @@
+[gd_scene load_steps=2 format=3 uid="uid://c548s6pec6a87"]
+
+[ext_resource type="Script" path="res://Missions/mission_3/questions.gd" id="1_0v78e"]
+
+[node name="questions" type="Node2D"]
+script = ExtResource("1_0v78e")
+
+[node name="q1" type="Label" parent="."]
+offset_left = 15.0
+offset_top = 14.0
+offset_right = 432.0
+offset_bottom = 52.0
+theme_override_font_sizes/font_size = 25
+text = "Q1: "
+
+[node name="q2" type="Label" parent="."]
+offset_left = 16.0
+offset_top = 92.0
+offset_right = 56.0
+offset_bottom = 118.0
+scale = Vector2(1.54124, 1.60191)
+text = "Q2:"
+
+[node name="Label" type="Label" parent="."]
+offset_left = 16.0
+offset_top = 158.0
+offset_right = 56.0
+offset_bottom = 184.0
+scale = Vector2(1.56757, 1.63636)
+text = "Q3:"

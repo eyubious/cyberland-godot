@@ -1,0 +1,38 @@
+[gd_scene load_steps=3 format=3 uid="uid://bmg2jjoe4jwf1"]
+
+[ext_resource type="Texture2D" uid="uid://b1iov6mmay580" path="res://Images/cityscape.png" id="1_6jnb3"]
+[ext_resource type="Script" path="res://Missions/mission_3/task3.gd" id="1_stnmg"]
+
+[node name="task3" type="Node2D"]
+script = ExtResource("1_stnmg")
+
+[node name="backgroundCity" type="Sprite2D" parent="."]
+position = Vector2(289, 510)
+texture = ExtResource("1_6jnb3")
+
+[node name="Task Title" type="Label" parent="."]
+offset_left = 81.0
+offset_top = 43.0
+offset_right = 498.0
+offset_bottom = 81.0
+theme_override_font_sizes/font_size = 25
+text = "Mission 3: Testing Your Knowledge"
+
+[node name="Quiz" type="Button" parent="."]
+offset_left = 163.0
+offset_top = 162.0
+offset_right = 379.0
+offset_bottom = 218.0
+scale = Vector2(1.06132, 1.8378)
+text = "Click here to start the quiz!"
+
+[node name="MainMenu" type="Button" parent="."]
+offset_left = 165.0
+offset_top = 347.0
+offset_right = 309.0
+offset_bottom = 398.0
+scale = Vector2(1.59927, 2.34191)
+text = "Go To Main Menu"
+
+[connection signal="pressed" from="Quiz" to="." method="_on_quiz_pressed"]
+[connection signal="pressed" from="MainMenu" to="." method="_on_main_menu_pressed"]
