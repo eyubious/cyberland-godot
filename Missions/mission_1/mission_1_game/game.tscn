@@ -2641,3 +2641,8 @@ scale = Vector2(2.70445, 3.1245)
 tile_set = SubResource("TileSet_n5sd4")
 format = 2
 script = ExtResource("3_1dpea")
+
+[node name="gameTitle" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 19.0
+text = "Let's Play!"
