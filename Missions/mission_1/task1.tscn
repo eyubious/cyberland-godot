@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://cqhg24jyiqphr"]
+[gd_scene load_steps=5 format=3 uid="uid://cqhg24jyiqphr"]
 
 [ext_resource type="Script" path="res://Missions/mission_1/task1.gd" id="1_a03ka"]
 [ext_resource type="VideoStream" path="res://Images/videoforgame.ogv" id="1_idbem"]
+[ext_resource type="Texture2D" uid="uid://b1iov6mmay580" path="res://Images/cityscape.png" id="2_5hxse"]
 
 [sub_resource type="Theme" id="Theme_5xxnx"]
 
@@ -10,6 +11,10 @@ position = Vector2(-1, 2)
 script = ExtResource("1_a03ka")
 metadata/_edit_horizontal_guides_ = [14208.0]
 metadata/_edit_vertical_guides_ = []
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(289, 510)
+texture = ExtResource("2_5hxse")
 
 [node name="Task Title" type="Label" parent="."]
 offset_left = 105.0
@@ -20,21 +25,21 @@ theme_override_font_sizes/font_size = 25
 text = "Mission 1: Intro To Cyber Bullying"
 
 [node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
-offset_left = 27.0
-offset_top = 155.0
-offset_right = 943.0
-offset_bottom = 506.0
+offset_left = 25.0
+offset_top = 150.0
+offset_right = 941.0
+offset_bottom = 501.0
 scale = Vector2(0.578471, 0.876942)
 theme = SubResource("Theme_5xxnx")
 stream = ExtResource("1_idbem")
 expand = true
 
-[node name="Button" type="Button" parent="VideoStreamPlayer"]
+[node name="continue_button" type="Button" parent="VideoStreamPlayer"]
 layout_mode = 0
-offset_left = 254.118
-offset_top = 822.175
-offset_right = 610.118
-offset_bottom = 898.175
+offset_left = 254.0
+offset_top = 821.0
+offset_right = 608.0
+offset_bottom = 898.0
 text = "Continue"
 
 [node name="Button2" type="Button" parent="VideoStreamPlayer"]
@@ -46,5 +51,6 @@ offset_right = 602.033
 offset_bottom = 777.441
 text = "Play/Pause"
 
-[connection signal="pressed" from="VideoStreamPlayer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="VideoStreamPlayer/continue_button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="VideoStreamPlayer/continue_button" to="." method="_on_video_finished"]
 [connection signal="pressed" from="VideoStreamPlayer/Button2" to="." method="_on_button_2_pressed"]
