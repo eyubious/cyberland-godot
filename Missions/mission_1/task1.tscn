@@ -12,11 +12,11 @@ script = ExtResource("1_a03ka")
 metadata/_edit_horizontal_guides_ = [14208.0]
 metadata/_edit_vertical_guides_ = []
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="cityBackground" type="Sprite2D" parent="."]
 position = Vector2(289, 510)
 texture = ExtResource("2_5hxse")
 
-[node name="Task Title" type="Label" parent="."]
+[node name="taskTitle" type="Label" parent="."]
 offset_left = 105.0
 offset_top = 62.0
 offset_right = 473.0
@@ -34,7 +34,7 @@ theme = SubResource("Theme_5xxnx")
 stream = ExtResource("1_idbem")
 expand = true
 
-[node name="continue_button" type="Button" parent="VideoStreamPlayer"]
+[node name="continueBtn" type="Button" parent="VideoStreamPlayer"]
 layout_mode = 0
 offset_left = 254.0
 offset_top = 821.0
@@ -42,7 +42,7 @@ offset_right = 608.0
 offset_bottom = 898.0
 text = "Continue"
 
-[node name="Button2" type="Button" parent="VideoStreamPlayer"]
+[node name="replayBtn" type="Button" parent="VideoStreamPlayer"]
 visible = false
 layout_mode = 0
 offset_left = 261.033
@@ -51,6 +51,5 @@ offset_right = 602.033
 offset_bottom = 777.441
 text = "Play/Pause"
 
-[connection signal="pressed" from="VideoStreamPlayer/continue_button" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="VideoStreamPlayer/continue_button" to="." method="_on_video_finished"]
-[connection signal="pressed" from="VideoStreamPlayer/Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="VideoStreamPlayer/continueBtn" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="VideoStreamPlayer/replayBtn" to="." method="_on_button_2_pressed"]

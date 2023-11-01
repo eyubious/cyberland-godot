@@ -16,7 +16,7 @@ func _process(delta):
 
 
 func _on_button_pressed():
-	get_tree().change_scene_to_file("res://cyberland_map.tscn")
+	get_tree().change_scene_to_file("")
 
 #code if you want play/stop but if you resume video will start all over.
 #func _on_button_2_pressed():
