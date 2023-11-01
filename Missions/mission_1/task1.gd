@@ -16,7 +16,7 @@ func _process(delta):
 
 
 func _on_button_pressed():
-	get_tree().change_scene_to_file("")
+	get_tree().change_scene_to_file(""res://Missions/mission_1/mission_1_game/game.tscn"")
 
 #code if you want play/stop but if you resume video will start all over.
 #func _on_button_2_pressed():
@@ -33,4 +33,3 @@ func start_video_with_delay():
 	var video_player = $VideoStreamPlayer
 	await get_tree().create_timer(2).timeout # Wait for 3 seconds
 	video_player.play()  # Play the video after the delay
-

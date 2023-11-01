@@ -40,7 +40,7 @@ offset_left = 254.0
 offset_top = 821.0
 offset_right = 608.0
 offset_bottom = 898.0
-text = "Continue"
+text = "Play Game!"
 
 [node name="replayBtn" type="Button" parent="VideoStreamPlayer"]
 visible = false
