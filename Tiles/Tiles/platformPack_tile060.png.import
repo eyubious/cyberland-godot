@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ddpltdgnjlsbc"
-path="res://.godot/imported/cyberland_backgrounds.png-7d4c6e9652bad87771655f6b6cf6dc9e.ctex"
+uid="uid://br7djyro6gvl4"
+path="res://.godot/imported/platformPack_tile060.png-26584be87953dfc65f5cfbd44d4832a4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Missions/mission_1/cyberland_backgrounds.png"
-dest_files=["res://.godot/imported/cyberland_backgrounds.png-7d4c6e9652bad87771655f6b6cf6dc9e.ctex"]
+source_file="res://Tiles/Tiles/platformPack_tile060.png"
+dest_files=["res://.godot/imported/platformPack_tile060.png-26584be87953dfc65f5cfbd44d4832a4.ctex"]
 
 [params]
 
