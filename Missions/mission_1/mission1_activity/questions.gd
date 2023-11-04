@@ -24,6 +24,7 @@ func _ready():
 
 func refresh_screen():
 	slider.value = 0
+	$percent.text = "%0d" % slider.value + "%"
 	time = 10.0
 	set_process(true)
 	showResultBtn.hide()
@@ -75,6 +76,7 @@ func _on_show_result_pressed():
 	stop()
 
 func _on_percentage_scale_drag_ended(value_changed):
+	$percent.text = "%02d" % slider.value + "%"
 	showResultBtn.show()
 
 func _on_next_btn_pressed():
