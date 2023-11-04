@@ -44,5 +44,6 @@ theme_override_font_sizes/font_size = 30
 text = "<< Start >>"
 
 [node name="BottomMenu" parent="." instance=ExtResource("3_5ym3l")]
+scale = Vector2(0.399959, -0.00197317)
 
 [connection signal="pressed" from="startBtn" to="." method="_on_start_btn_pressed"]
