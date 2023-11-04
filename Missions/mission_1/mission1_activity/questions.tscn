@@ -16,10 +16,6 @@ HSlider/styles/slider = SubResource("StyleBoxTexture_lkuxy")
 [node name="questions" type="Node2D"]
 script = ExtResource("1_fc4m7")
 
-[node name="timer" type="Timer" parent="."]
-wait_time = 10.0
-autostart = true
-
 [node name="percentage_scale" type="HSlider" parent="."]
 offset_left = 81.0
 offset_top = 367.0
@@ -27,4 +23,41 @@ offset_right = 423.0
 offset_bottom = 417.0
 theme = SubResource("Theme_k8xge")
 
-[connection signal="timeout" from="timer" to="." method="_on_timer_timeout"]
+[node name="Panel" type="Panel" parent="."]
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 185.0
+offset_bottom = 70.0
+
+[node name="mins" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 8.0
+offset_right = 55.0
+offset_bottom = 48.0
+theme_override_font_sizes/font_size = 30
+text = "00:"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="secs" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 8.0
+offset_right = 102.0
+offset_bottom = 48.0
+theme_override_font_sizes/font_size = 30
+text = "00:"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="msec" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 107.0
+offset_top = 8.0
+offset_right = 149.0
+offset_bottom = 48.0
+theme_override_font_sizes/font_size = 30
+text = "00:"
+horizontal_alignment = 2
+vertical_alignment = 1
