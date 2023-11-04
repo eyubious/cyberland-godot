@@ -10,6 +10,58 @@ script = ExtResource("1_n42fu")
 position = Vector2(289, 510)
 texture = ExtResource("1_2i0jd")
 
+[node name="sceneTitle" type="Label" parent="."]
+offset_left = 81.0
+offset_top = 43.0
+offset_right = 498.0
+offset_bottom = 104.0
+theme_override_font_sizes/font_size = 30
+text = "Congratulations!
+You've completed the game!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="endDescription" type="Label" parent="."]
+offset_left = 64.0
+offset_top = 168.0
+offset_right = 504.0
+offset_bottom = 376.0
+theme_override_font_sizes/font_size = 25
+text = "User game results"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="totalScore" type="Label" parent="."]
+offset_left = 65.0
+offset_top = 392.0
+offset_right = 160.0
+offset_bottom = 413.0
+theme_override_font_sizes/font_size = 15
+text = "Total Score"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="avgTime" type="Label" parent="."]
+offset_left = 248.0
+offset_top = 393.0
+offset_right = 311.0
+offset_bottom = 414.0
+theme_override_font_sizes/font_size = 15
+text = "Time"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="percentage" type="Label" parent="."]
+offset_left = 423.0
+offset_top = 394.0
+offset_right = 505.0
+offset_bottom = 415.0
+theme_override_font_sizes/font_size = 15
+text = "Percent"
+horizontal_alignment = 1
+autowrap_mode = 3
+
 [node name="nextBtn" type="Button" parent="."]
 offset_left = 408.0
 offset_top = 936.0
