@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://cgh1pyghyhhms"]
+
+[ext_resource type="Texture2D" uid="uid://b1iov6mmay580" path="res://Images/cityscape.png" id="1_2i0jd"]
+[ext_resource type="Script" path="res://Missions/mission_1/mission_1_game/game_end.gd" id="1_n42fu"]
+
+[node name="game_end" type="Node2D"]
+script = ExtResource("1_n42fu")
+
+[node name="backgroundCity" type="Sprite2D" parent="."]
+position = Vector2(289, 510)
+texture = ExtResource("1_2i0jd")
+
+[node name="nextBtn" type="Button" parent="."]
+offset_left = 408.0
+offset_top = 936.0
+offset_right = 512.0
+offset_bottom = 984.0
+text = "Next"
+
+[connection signal="pressed" from="nextBtn" to="." method="_on_next_btn_pressed"]

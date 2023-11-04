@@ -12,4 +12,4 @@ func _process(delta):
 
 
 func _on_next_btn_pressed():
-	get_tree().change_scene_to_file("res://Missions/mission_1/mission_1_game/play_game.tscn")
+	get_tree().change_scene_to_file("res://Missions/mission_1/mission1_activity/task3.tscn")
