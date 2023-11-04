@@ -12,6 +12,7 @@ var msec: int = 0
 # question variables
 @onready var displayQuestion = $question
 @onready var displayDesc = $description
+@onready var displayAnsw = $actualPercentage
 @onready var showResultBtn = $showResult
 @onready var nextBtn = $nextBtn
 
@@ -47,6 +48,7 @@ func _process(delta):
 	if (mins == 0 && secs == 0 && msec == 0):
 		stop()
 		show_description()
+		show_answer()
 
 func stop() -> void:
 	set_process(false)
@@ -62,9 +64,15 @@ func show_description():
 		
 func show_question():
 	displayDesc.hide()
+	displayAnsw.hide()
 	displayQuestion.show()
 	item = dict[item_index]
 	displayQuestion.text = item.question
+
+func show_answer():
+	item = dict[item_index]
+	displayAnsw.text = item.answer
+	displayAnsw.show()
 	
 func read_file(file):
 	var json_as_text = FileAccess.get_file_as_string(file)
@@ -73,6 +81,7 @@ func read_file(file):
 
 func _on_show_result_pressed():
 	show_description()
+	show_answer()
 	stop()
 
 func _on_percentage_scale_drag_ended(value_changed):
