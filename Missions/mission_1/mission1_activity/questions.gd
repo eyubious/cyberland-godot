@@ -6,6 +6,9 @@ var mins: int = 0
 var secs: int = 0
 var msec: int = 0
 
+# slider variable
+@onready var slider = $percentage_scale
+
 # question variables
 @onready var displayQuestion = $question
 @onready var displayDesc = $description
@@ -16,12 +19,11 @@ var dict = read_file("res://Missions/mission_1/mission1_activity/questions_answe
 var item: Dictionary
 var item_index: int = 0
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
 	refresh_screen()
 
-	
 func refresh_screen():
+	slider.value = 0
 	time = 10.0
 	set_process(true)
 	showResultBtn.hide()
