@@ -100,13 +100,5 @@ offset_bottom = 988.0
 theme_override_font_sizes/font_size = 20
 text = "Show rate!"
 
-[node name="nextBtn" type="Button" parent="."]
-offset_left = 401.0
-offset_top = 934.0
-offset_right = 504.0
-offset_bottom = 989.0
-text = "Next"
-
 [connection signal="drag_ended" from="percentage_scale" to="." method="_on_percentage_scale_drag_ended"]
 [connection signal="pressed" from="showResult" to="." method="_on_show_result_pressed"]
-[connection signal="pressed" from="nextBtn" to="." method="_on_next_btn_pressed"]

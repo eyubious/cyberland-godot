@@ -30,7 +30,7 @@ text = "The game will ask you to guess the rate that an event occurs.
 To play, slide the scale on the screen to make your guess. You only have ten seconds!
 
 
-After guessing, press the button or wait for the time to run out to see the result!"
+After guessing, press the button or wait for the time to run out to see the right rate!"
 autowrap_mode = 3
 
 [node name="startQuiz" type="Button" parent="."]
