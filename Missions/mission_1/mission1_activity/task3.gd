@@ -15,5 +15,5 @@ func _on_main_menu_pressed():
 	get_tree().change_scene_to_file("res://cyberland_map.tscn")
 
 
-func _on_quiz_pressed():
+func _on_start_quiz_pressed():
 	get_tree().change_scene_to_file("res://Missions/mission_1/mission1_activity/questions.tscn")
