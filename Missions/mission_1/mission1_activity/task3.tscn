@@ -20,7 +20,7 @@ text = " Testing Your Knowledge!"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Label" type="Label" parent="."]
+[node name="gameDescription" type="Label" parent="."]
 offset_left = 64.0
 offset_top = 168.0
 offset_right = 504.0

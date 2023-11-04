@@ -31,7 +31,7 @@ func refresh_screen():
 	showResultBtn.hide()
 	nextBtn.hide()
 	if item_index >= dict.size():
-		show_description()
+		get_tree().change_scene_to_file("res://Missions/mission_1/mission1_activity/task3_end.tscn")
 	else:
 		show_question()
 
