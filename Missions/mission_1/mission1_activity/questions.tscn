@@ -1,30 +1,30 @@
-[gd_scene load_steps=2 format=3 uid="uid://c548s6pec6a87"]
+[gd_scene load_steps=5 format=3 uid="uid://c548s6pec6a87"]
 
 [ext_resource type="Script" path="res://Missions/mission_1/mission1_activity/questions.gd" id="1_fc4m7"]
+[ext_resource type="Texture2D" uid="uid://bsx604ee36ual" path="res://Images/scale.png" id="2_pjfem"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_lkuxy"]
+texture = ExtResource("2_pjfem")
+texture_margin_left = 10.0
+texture_margin_top = 10.0
+texture_margin_right = 10.0
+texture_margin_bottom = 10.0
+
+[sub_resource type="Theme" id="Theme_k8xge"]
+HSlider/styles/slider = SubResource("StyleBoxTexture_lkuxy")
 
 [node name="questions" type="Node2D"]
 script = ExtResource("1_fc4m7")
 
-[node name="q1" type="Label" parent="."]
-offset_left = 15.0
-offset_top = 14.0
-offset_right = 432.0
-offset_bottom = 52.0
-theme_override_font_sizes/font_size = 25
-text = "Q1: "
+[node name="timer" type="Timer" parent="."]
+wait_time = 10.0
+autostart = true
 
-[node name="q2" type="Label" parent="."]
-offset_left = 16.0
-offset_top = 92.0
-offset_right = 56.0
-offset_bottom = 118.0
-scale = Vector2(1.54124, 1.60191)
-text = "Q2:"
+[node name="percentage_scale" type="HSlider" parent="."]
+offset_left = 81.0
+offset_top = 367.0
+offset_right = 423.0
+offset_bottom = 417.0
+theme = SubResource("Theme_k8xge")
 
-[node name="Label" type="Label" parent="."]
-offset_left = 16.0
-offset_top = 158.0
-offset_right = 56.0
-offset_bottom = 184.0
-scale = Vector2(1.56757, 1.63636)
-text = "Q3:"
+[connection signal="timeout" from="timer" to="." method="_on_timer_timeout"]
