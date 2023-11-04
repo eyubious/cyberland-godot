@@ -1,5 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://02f6fawt3l6h"]
+[gd_scene load_steps=6 format=3 uid="uid://02f6fawt3l6h"]
 
+[ext_resource type="Script" path="res://Missions/mission_1/mission_1_game/game.gd" id="1_2b8qm"]
 [ext_resource type="Texture2D" uid="uid://cpdbmuai2ungq" path="res://Tiles/Tilesheet/platformPack_tilesheet.png" id="2_3crip"]
 [ext_resource type="Script" path="res://Missions/mission_1/mission_1_game/gameFloor.gd" id="3_1dpea"]
 
@@ -2634,6 +2635,7 @@ tile_size = Vector2i(8, 8)
 sources/2 = SubResource("TileSetAtlasSource_8pn4s")
 
 [node name="game" type="Node2D"]
+script = ExtResource("1_2b8qm")
 
 [node name="gameFloor" type="TileMap" parent="."]
 position = Vector2(-1, 0)
@@ -2646,3 +2648,12 @@ script = ExtResource("3_1dpea")
 offset_right = 40.0
 offset_bottom = 19.0
 text = "Let's Play!"
+
+[node name="nextBtn" type="Button" parent="."]
+offset_left = 408.0
+offset_top = 936.0
+offset_right = 512.0
+offset_bottom = 984.0
+text = "Next"
+
+[connection signal="pressed" from="nextBtn" to="." method="_on_next_btn_pressed"]
