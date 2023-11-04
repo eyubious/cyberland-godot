@@ -1,0 +1,131 @@
+[gd_scene load_steps=7 format=3 uid="uid://c548s6pec6a87"]
+
+[ext_resource type="Script" path="res://Missions/mission_1/mission1_activity/questions.gd" id="1_fc4m7"]
+[ext_resource type="Texture2D" uid="uid://d0ktmikbprtx7" path="res://Images/scale_button.png" id="2_g37lk"]
+[ext_resource type="Texture2D" uid="uid://bsx604ee36ual" path="res://Images/scale.png" id="2_pjfem"]
+[ext_resource type="Texture2D" uid="uid://b1iov6mmay580" path="res://Images/cityscape.png" id="2_xavxh"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_lkuxy"]
+texture = ExtResource("2_pjfem")
+texture_margin_left = 15.0
+texture_margin_top = 15.0
+texture_margin_right = 15.0
+texture_margin_bottom = 15.0
+
+[sub_resource type="Theme" id="Theme_k8xge"]
+HSlider/styles/slider = SubResource("StyleBoxTexture_lkuxy")
+
+[node name="questions" type="Node2D"]
+script = ExtResource("1_fc4m7")
+
+[node name="backgroundCity" type="Sprite2D" parent="."]
+position = Vector2(289, 510)
+texture = ExtResource("2_xavxh")
+
+[node name="question" type="Label" parent="."]
+offset_left = 40.0
+offset_top = 112.0
+offset_right = 536.0
+offset_bottom = 344.0
+theme_override_font_sizes/font_size = 30
+text = "Question"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="actualPercentage" type="Label" parent="."]
+offset_left = 177.0
+offset_top = 367.0
+offset_right = 392.0
+offset_bottom = 473.0
+theme_override_font_sizes/font_size = 30
+text = "Actual percentage"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="description" type="Label" parent="."]
+offset_left = 43.0
+offset_top = 482.0
+offset_right = 539.0
+offset_bottom = 714.0
+theme_override_font_sizes/font_size = 30
+text = "Description"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="timer" type="Panel" parent="."]
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 185.0
+offset_bottom = 70.0
+
+[node name="mins" type="Label" parent="timer"]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 8.0
+offset_right = 55.0
+offset_bottom = 48.0
+theme_override_font_sizes/font_size = 30
+text = "00:"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="secs" type="Label" parent="timer"]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 8.0
+offset_right = 102.0
+offset_bottom = 48.0
+theme_override_font_sizes/font_size = 30
+text = "00:"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="msec" type="Label" parent="timer"]
+layout_mode = 0
+offset_left = 107.0
+offset_top = 8.0
+offset_right = 149.0
+offset_bottom = 48.0
+theme_override_font_sizes/font_size = 30
+text = "00:"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="percentage_scale" type="HSlider" parent="."]
+offset_left = 93.0
+offset_top = 815.0
+offset_right = 509.0
+offset_bottom = 865.0
+theme = SubResource("Theme_k8xge")
+theme_override_icons/grabber = ExtResource("2_g37lk")
+theme_override_icons/grabber_highlight = ExtResource("2_g37lk")
+
+[node name="percent" type="Label" parent="."]
+offset_left = 284.0
+offset_top = 863.0
+offset_right = 324.0
+offset_bottom = 882.0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="showResult" type="Button" parent="."]
+offset_left = 100.0
+offset_top = 932.0
+offset_right = 203.0
+offset_bottom = 988.0
+theme_override_font_sizes/font_size = 20
+text = "Show rate!"
+
+[node name="nextBtn" type="Button" parent="."]
+offset_left = 401.0
+offset_top = 934.0
+offset_right = 504.0
+offset_bottom = 989.0
+text = "Next"
+
+[connection signal="drag_ended" from="percentage_scale" to="." method="_on_percentage_scale_drag_ended"]
+[connection signal="pressed" from="showResult" to="." method="_on_show_result_pressed"]
+[connection signal="pressed" from="nextBtn" to="." method="_on_next_btn_pressed"]
