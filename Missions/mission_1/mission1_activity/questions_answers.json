@@ -25,13 +25,28 @@
 		"description": "Since cyberbullying occurs over the internet, we think it is often done by someone we do not know. How high is the rate of finding someone we know!"
 	},
 	{
-		"question": "",
-		"answer": "",
-		"description": ""
+		"question": "At what rate are adults being cyberbullied?",
+		"answer": "40%",
+		"description": "Children and teenagers are not the only ones who are subjected to cyberbullying. One in three adults experience it too!"
 	},
 	{
-		"question": "",
-		"answer": "",
-		"description": ""
+		"question": "At what rate is cyberbullying seen on social media?",
+		"answer": "65%",
+		"description": "Social media platforms are places where cyberbullying is more common. More than half of social media users are exposed to cyberbullying!"
 	},
+	{
+		"question": "What is the rate that people experience cyberbullying about their appearance? ",
+		"answer": "61%",
+		"description": "More than half of people care about their appearance (height, weight, clothing style, etc.) and experience are bullied about it online!"
+	},
+	{
+		"question": "What is the rate of exposure to cyberbullying on social media applications in one day around the world?",
+		"answer": "38%",
+		"description": "Roughly one in three people are exposed to some form of cyberbullying in a day"
+	},
+	{
+		"question": "What is the sharing rate of people who take a screenshot of someone else's post or photo and share it wihout permission?",
+		"answer": "35%",
+		"description": "Roughly one in three people's photos or posts are shared without permission!"
+	}
 ]
