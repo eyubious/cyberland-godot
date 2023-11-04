@@ -18,7 +18,7 @@ HSlider/styles/slider = SubResource("StyleBoxTexture_lkuxy")
 [node name="questions" type="Node2D"]
 script = ExtResource("1_fc4m7")
 
-[node name="questionl" type="Label" parent="."]
+[node name="question" type="Label" parent="."]
 offset_left = 40.0
 offset_top = 112.0
 offset_right = 536.0
