@@ -16,12 +16,14 @@ var dict = read_file("res://Missions/mission_1/mission1_activity/questions_answe
 var item: Dictionary
 var item_index: int = 0
 
-
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	refresh_screen()
+
 	
 func refresh_screen():
+	time = 10.0
+	set_process(true)
 	showResultBtn.hide()
 	nextBtn.hide()
 	if item_index >= dict.size():
