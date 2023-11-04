@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://byu4h6307w71s"
-path="res://.godot/imported/city_blue.png-05be1a620b8f697e5aee9bb8a788ee8d.ctex"
+uid="uid://d0ktmikbprtx7"
+path="res://.godot/imported/scale_button.png-cb23da27c232b1d54be53ab1f7c1fff3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Images/city_blue.png"
-dest_files=["res://.godot/imported/city_blue.png-05be1a620b8f697e5aee9bb8a788ee8d.ctex"]
+source_file="res://Images/scale_button.png"
+dest_files=["res://.godot/imported/scale_button.png-cb23da27c232b1d54be53ab1f7c1fff3.ctex"]
 
 [params]
 
