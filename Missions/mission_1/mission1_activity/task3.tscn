@@ -1,14 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://bmg2jjoe4jwf1"]
+[gd_scene load_steps=3 format=3 uid="uid://cmv70dsu486ok"]
 
-[ext_resource type="Texture2D" uid="uid://b1iov6mmay580" path="res://Images/cityscape.png" id="1_6jnb3"]
-[ext_resource type="Script" path="res://Missions/mission_3/task3.gd" id="1_stnmg"]
+[ext_resource type="Script" path="res://Missions/mission_1/mission1_activity/task3.gd" id="1_iyjts"]
+[ext_resource type="Texture2D" uid="uid://b1iov6mmay580" path="res://Images/cityscape.png" id="2_m63rp"]
 
 [node name="task3" type="Node2D"]
-script = ExtResource("1_stnmg")
+script = ExtResource("1_iyjts")
 
 [node name="backgroundCity" type="Sprite2D" parent="."]
 position = Vector2(289, 510)
-texture = ExtResource("1_6jnb3")
+texture = ExtResource("2_m63rp")
 
 [node name="Task Title" type="Label" parent="."]
 offset_left = 81.0

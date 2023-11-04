@@ -16,4 +16,4 @@ func _on_main_menu_pressed():
 
 
 func _on_quiz_pressed():
-	get_tree().change_scene_to_file("res://mission_3/questions.tscn")
+	get_tree().change_scene_to_file("res://Missions/mission_1/mission1_activity/questions.tscn")
