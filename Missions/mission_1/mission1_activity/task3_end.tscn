@@ -1,0 +1,45 @@
+[gd_scene load_steps=3 format=3 uid="uid://cxkyfoiesvv6l"]
+
+[ext_resource type="Script" path="res://Missions/mission_1/mission1_activity/task3_end.gd" id="1_hvmkc"]
+[ext_resource type="Texture2D" uid="uid://b1iov6mmay580" path="res://Images/cityscape.png" id="1_svgwl"]
+
+[node name="task3_end" type="Node2D"]
+script = ExtResource("1_hvmkc")
+
+[node name="backgroundCity" type="Sprite2D" parent="."]
+position = Vector2(289, 510)
+texture = ExtResource("1_svgwl")
+
+[node name="sceneTitle" type="Label" parent="."]
+offset_left = 81.0
+offset_top = 43.0
+offset_right = 498.0
+offset_bottom = 104.0
+theme_override_font_sizes/font_size = 30
+text = "Congratulations!
+You've completed the game!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="endDescription" type="Label" parent="."]
+offset_left = 64.0
+offset_top = 168.0
+offset_right = 504.0
+offset_bottom = 376.0
+theme_override_font_sizes/font_size = 25
+text = "You've seen some information about cyberbullying in different age groups and different environments.
+
+Was this information surprising to you?
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="returnBtn" type="Button" parent="."]
+offset_left = 179.0
+offset_top = 719.0
+offset_right = 370.0
+offset_bottom = 776.0
+text = "Return to Cyberland"
+
+[connection signal="pressed" from="returnBtn" to="." method="_on_return_btn_pressed"]

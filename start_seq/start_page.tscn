@@ -22,7 +22,7 @@ Button/styles/pressed = SubResource("StyleBoxFlat_57qnh")
 script = ExtResource("1_xgmka")
 
 [node name="cityBackground" type="Sprite2D" parent="."]
-position = Vector2(288, 512.63)
+position = Vector2(289, 512)
 scale = Vector2(1, 0.998769)
 texture = ExtResource("2_rv1xv")
 
