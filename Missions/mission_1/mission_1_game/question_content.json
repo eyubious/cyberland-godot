@@ -1,0 +1,159 @@
+[
+	{
+		"question" : "What is cyberbullying?",
+		"answers" : [
+			"Harrassment or bullying that occurs through electronic devices",
+			"Physical bullying towards the person",
+			"Bullying that occurs only verbally"
+			]
+	},
+	{
+		"question" : "Which of the following is an example of cyberbullying?",
+		"answers" : [
+			"Having a disagreement with a friend",
+			"Playing online games with people you don't know",
+			"Writing insulting comments to someone online"
+		]
+	},
+	{
+		"question" : "Who can be victims of cyberbullying?",
+		"answers" : [
+			"Children only",
+			"Everyone, regardless of age",
+			"Adults only"
+		]
+	},
+	{
+		"question" : "Does cyberbullying only happen to women?",
+		"answers" : [
+			"Yes, it only happens to women",
+			"No, it happens to men too"
+		]
+	},
+	{
+		"question" : "Which of the following is not cyberbullying?",
+		"answers" : [
+			"Making derogatory and hurtful comments on social media",
+			"Publishing your friend's private information on the internet without permission",
+			"Expressing your opinions online using non-offensive language"
+		]
+	},
+	{
+		"question" : "Is cyberbullying a crime?",
+		"answers" : [
+			"Cyberbullying does not constitute a crime in law",
+			"Cyberbullying is a crime only for adults",
+			"There are legal sanctions for those under the age of 18"
+		]
+	},
+	{
+		"question" : "Cemre knows that Deniz is being cyberbullied, but she does not what to leave the WhatsApp group. She ignores the situation because she is afraid of being removed and left without friends. Cemre is ...",
+		"answers" : [
+			"a cyberbully",
+			"a cyber defender",
+			"the audience"
+		]
+	},
+	{
+		"question" : "When Gizem finds out that her best friend is being cyberbullied, she wants to tell someone she trusts and think will help them. Gizem is ...",
+		"answers" : [
+			"a cyberbullying defender",
+			"a cyberbully",
+			"the audience"
+		]
+	},
+	{
+		"question" : "Cam asks Kerem for permission to share the photo they took together on his social media account. Cam is ...",
+		"answer" : [
+			"a cyberbully",
+			"a cyberbuddy",
+			"the audience"
+		]
+	},
+	{
+		"question" : "Yusuf spread a rumour about Cansu on Twitter. Cansu is ...",
+		"answer" : [
+			"a cyber victim",
+			"a cyberbully",
+			"the audience"
+		]
+	},
+	{
+		"question" : "Ahmet was affected by some of the social media posts of Gökhan, with whom he studied with at the same school, and stopped following him. Ahmet is ...",
+		"answers" : [
+			"cyberbullying",
+			"not cyberbullying"
+		]
+	},
+	{
+		"question" : "Buse shows Kağan private photos of a friend in their class. Kağan tells his friend that what he did was wrong and does not look at the photos he showed him. Kağan is ...",
+		"answers" : [
+			"a cyber defender",
+			"a cyberbully",
+			"a cyber victim"
+		]
+	}, 
+	{
+		"question" : "When Esra saw her friend's TikTok video, which received many likes, she created a fake profile and sent messages to annoy them. Esra is ...",
+		"answers" : [
+			"a cyberbully",
+			"a cyber victim",
+			"addicted to cyber"
+		]
+	},
+	{
+		"question" : "Melissa started a group chat without Cem and sent a lot of unpleasant messages about Cam. Is this cyberbullying?",
+		"answer" : [
+			"Yes",
+			"No",
+			"Not unless Cam learns"
+		]
+	},
+	{
+		"question" : "Cem heard people talking badly about him in the group chat and shared the photos he secretly took of Melisa. Is this cyerbullying?",
+		"answers" : [
+			"No",
+			"Yes", 
+			"No, because Melisa was cyberbullied first"
+		]
+	},
+	{
+		"question" : "Ash saw a post from a friend who he thought was not dressed well and shared the screenshot in a groupchat. Is this cyberbullying?",
+		"answers" : [
+			"This is cyberbullying",
+			"This is not cyberbullying",
+			"He did everything for fashion"
+		]
+	},
+	{
+		"question" : "What does a cyber advocate do when faced with cyberbullying?",
+		"answers" : [
+			"Remains silent and does not interfere",
+			"Supports cyberbullying to avoid losing friendship",
+			"Provides support to cyber victims"
+		]
+	},
+	{
+		"question" : "What should we do when we witness cyberbullying?",
+		"answers" : [
+			"We must report to a trusted adult or authorized person",
+			"If we love the cyberbully, we should support whatever they do",
+			"We should ignore the cyberbullying"
+		]
+	},
+	{
+		"question" : "Is cyberbulling done only by people we don't know?",
+		"answers" : [
+			"Yes, it is done by people we don't know",
+			"No, you know most cyberbullies in real life"
+		]
+	},
+	{
+		"question" : "Is cyberbullying harmful?",
+		"answers" : [
+			"Yes, it can have long-lasting effects on the cyber victim",
+			"No, it does not affect the cyber victim psychologically",
+			"No, cyberbullying is harmless fun"
+		]
+	}
+]
