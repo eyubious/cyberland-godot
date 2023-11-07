@@ -1,4 +1,4 @@
-extends TileMap
+extends Node2D
 
 
 # Called when the node enters the scene tree for the first time.
@@ -11,3 +11,5 @@ func _process(delta):
 	pass
 
 
+func _on_game_over_btn_pressed():
+	get_tree().change_scene_to_file("res://Missions/mission_1/mission_1_game/game_end.tscn")
