@@ -1,7 +1,7 @@
 extends Node2D
 
 # timer variables
-var time: float = 10.0
+var time: float =  300.0
 var mins: int = 0
 var secs: int = 0
 var msec: int = 0

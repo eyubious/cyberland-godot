@@ -16,7 +16,7 @@ offset_top = 43.0
 offset_right = 498.0
 offset_bottom = 104.0
 theme_override_font_sizes/font_size = 30
-text = "Let's Play a Game!"
+text = "Art is for Cyber Safety"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -26,9 +26,11 @@ offset_top = 168.0
 offset_right = 504.0
 offset_bottom = 508.0
 theme_override_font_sizes/font_size = 25
-text = "You'll now see some questions about cyberbullying basics. You need to give a certain number of correct answers to progress. 
+text = "Paintings of cyberbullying in the art gallery are blurred.
 
-Watch out for every wrong answer, they cause the road to crack. Six wrong answers and the ground breaks. Tou'll have to go back to the beginning. 
+As you answer questions correctly, the paintings will become clear.
+
+Be careful, if you give 6 total wrong answers or 3 wrong answers in a row, the game will restart.
 
 Come on, no stopping!"
 autowrap_mode = 3
@@ -38,6 +40,6 @@ offset_left = 408.0
 offset_top = 936.0
 offset_right = 512.0
 offset_bottom = 984.0
-text = "Next"
+text = "START!"
 
 [connection signal="pressed" from="nextBtn" to="." method="_on_next_btn_pressed"]

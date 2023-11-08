@@ -50,6 +50,8 @@ text = "00:"
 horizontal_alignment = 2
 vertical_alignment = 1
 
+[node name="artImage" type="Sprite2D" parent="."]
+
 [node name="gameOverBtn" type="Button" parent="."]
 offset_left = 408.0
 offset_top = 936.0
