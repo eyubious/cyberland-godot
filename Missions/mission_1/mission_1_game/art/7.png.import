@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cku1662pnmf87"
-path="res://.godot/imported/12.jpg-e58430d67bb3d860fb85693475033157.ctex"
+uid="uid://cewqp7c42pthc"
+path="res://.godot/imported/7.png-72b6327158d1a16d72da1f5dc33b7d43.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Missions/mission_1/mission_1_game/art/12.jpg"
-dest_files=["res://.godot/imported/12.jpg-e58430d67bb3d860fb85693475033157.ctex"]
+source_file="res://Missions/mission_1/mission_1_game/art/7.png"
+dest_files=["res://.godot/imported/7.png-72b6327158d1a16d72da1f5dc33b7d43.ctex"]
 
 [params]
 
