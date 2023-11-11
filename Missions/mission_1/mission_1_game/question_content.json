@@ -81,7 +81,7 @@
 	},
 	{
 		"question" : "Cam asks Kerem for permission to share the photo they took together on his social media account. Cam is ...",
-		"answer" : [
+		"answers" : [
 			"a cyberbully",
 			"a cyberbuddy",
 			"the audience"
@@ -90,7 +90,7 @@
 	},
 	{
 		"question" : "Yusuf spread a rumour about Cansu on Twitter. Cansu is ...",
-		"answer" : [
+		"answers" : [
 			"a cyber victim",
 			"a cyberbully",
 			"the audience"
@@ -125,7 +125,7 @@
 	},
 	{
 		"question" : "Melissa started a group chat without Cem and sent a lot of unpleasant messages about Cam. Is this cyberbullying?",
-		"answer" : [
+		"answers" : [
 			"Yes",
 			"No",
 			"Not unless Cam learns"
@@ -172,7 +172,7 @@
 		"question" : "Is cyberbulling done only by people we don't know?",
 		"answers" : [
 			"Yes, it is done by people we don't know",
-			"No, you know most cyberbullies in real life"
+			"No, oftentimes you know cyberbullies in real life"
 		],
 		"i_correct" : 1
 	},
