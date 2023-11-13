@@ -1,49 +1,50 @@
-[gd_scene load_steps=3 format=3 uid="uid://b6jhxxvvwogk7"]
+[gd_scene load_steps=2 format=3 uid="uid://b6jhxxvvwogk7"]
 
 [ext_resource type="Script" path="res://login.gd" id="1_082vf"]
-
-[sub_resource type="Theme" id="Theme_ac7ox"]
 
 [node name="BottomMenu" type="Node2D"]
 script = ExtResource("1_082vf")
 
-[node name="MapBtn" type="Button" parent="."]
-offset_left = 24.0
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+custom_minimum_size = Vector2(576, 61)
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
 offset_top = 960.0
-offset_right = 104.0
-offset_bottom = 1008.0
-theme = SubResource("Theme_ac7ox")
+offset_right = 576.0
+offset_bottom = 1021.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 31
+
+[node name="MapBtn" type="Button" parent="HBoxContainer"]
+custom_minimum_size = Vector2(90, 0)
+layout_mode = 2
 text = "Map"
 
-[node name="FilesBtn" type="Button" parent="."]
-offset_left = 376.0
-offset_top = 960.0
-offset_right = 456.0
-offset_bottom = 1008.0
+[node name="FilesBtn" type="Button" parent="HBoxContainer"]
+custom_minimum_size = Vector2(90, 0)
+layout_mode = 2
 text = "Files"
 
-[node name="MenuBtn" type="Button" parent="."]
-offset_left = 264.0
-offset_top = 960.0
-offset_right = 352.0
-offset_bottom = 1008.0
+[node name="MenuBtn" type="Button" parent="HBoxContainer"]
+custom_minimum_size = Vector2(90, 0)
+layout_mode = 2
 text = "Menu"
 
-[node name="CollectionsBtn" type="Button" parent="."]
-offset_left = 128.0
-offset_top = 960.0
-offset_right = 240.0
-offset_bottom = 1008.0
+[node name="CollectionsBtn" type="Button" parent="HBoxContainer"]
+custom_minimum_size = Vector2(90, 0)
+layout_mode = 2
 text = "Collections"
 
-[node name="Button" type="Button" parent="."]
-offset_left = 480.0
-offset_top = 960.0
-offset_right = 552.0
-offset_bottom = 1008.0
+[node name="Button" type="Button" parent="HBoxContainer"]
+custom_minimum_size = Vector2(90, 0)
+layout_mode = 2
 text = "Locked"
 
-[connection signal="pressed" from="MapBtn" to="." method="_on_map_btn_pressed"]
-[connection signal="pressed" from="FilesBtn" to="." method="_on_files_btn_pressed"]
-[connection signal="pressed" from="MenuBtn" to="." method="_on_menu_btn_pressed"]
-[connection signal="pressed" from="CollectionsBtn" to="." method="_on_collections_btn_pressed"]
+[connection signal="pressed" from="HBoxContainer/MapBtn" to="." method="_on_map_btn_pressed"]
+[connection signal="pressed" from="HBoxContainer/FilesBtn" to="." method="_on_files_btn_pressed"]
+[connection signal="pressed" from="HBoxContainer/MenuBtn" to="." method="_on_menu_btn_pressed"]
+[connection signal="pressed" from="HBoxContainer/CollectionsBtn" to="." method="_on_collections_btn_pressed"]
