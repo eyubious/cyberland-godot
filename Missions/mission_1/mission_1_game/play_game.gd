@@ -16,6 +16,7 @@ var item_index: int = 0
 @onready var displayQuestion = $VBoxContainer/question
 @onready var displayAnswerChoices = $VBoxContainer/answerChoices
 @onready var message = $message
+@onready var healthBar = $VBoxContainer/progressBar
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -82,7 +83,6 @@ func _on_answer_choices_item_selected(index):
 	else:
 		wrong_in_row += 1
 		wrong += 1
-	print(wrong)
-	print(wrong_in_row)
+	healthBar.value = Score.correct / dict.size() * 100
 	item_index += 1
 	refresh_screen()
