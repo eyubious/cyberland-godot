@@ -308,14 +308,13 @@ size_flags_horizontal = 4
 size_flags_vertical = 6
 size_flags_stretch_ratio = 0.0
 theme_override_constants/v_separation = 12
-theme_override_font_sizes/font_size = 25
+theme_override_font_sizes/font_size = 14
 allow_reselect = true
 allow_search = false
 max_text_lines = 2
 auto_height = true
 item_count = 3
 fixed_column_width = 1
-icon_mode = 0
 fixed_icon_size = Vector2i(12, 12)
 item_0/text = "a"
 item_1/text = "b"
@@ -328,5 +327,9 @@ layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 6
 theme_override_font_sizes/font_size = 25
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(274, 533)
+scale = Vector2(0.2, 0.2)
 
 [connection signal="item_selected" from="VBoxContainer/answerChoices" to="." method="_on_answer_choices_item_selected"]

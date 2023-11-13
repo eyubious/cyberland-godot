@@ -15,6 +15,10 @@ run/main_scene="res://start_seq/start_page.tscn"
 config/features=PackedStringArray("4.1", "Mobile")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Score="*res://Missions/mission_1/mission_1_game/score.gd"
+
 [display]
 
 window/size/viewport_width=576
