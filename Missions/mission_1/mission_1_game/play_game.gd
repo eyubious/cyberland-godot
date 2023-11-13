@@ -5,6 +5,7 @@ var time: float =  300.0
 
 # score variables
 var wrong: int = 0
+var wrong_in_row: int = 0
 
 # load data to dictionary
 var dict = read_file("res://Missions/mission_1/mission_1_game/question_content.json")
@@ -14,6 +15,7 @@ var item_index: int = 0
 # question & answers variables
 @onready var displayQuestion = $VBoxContainer/question
 @onready var displayAnswerChoices = $VBoxContainer/answerChoices
+@onready var message = $message
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -70,11 +72,17 @@ func read_file(file):
 func _on_answer_choices_item_selected(index):
 	if index == item.i_correct:
 		Score.correct += 1
-	elif (wrong >= 5):
+		wrong_in_row = 0
+	elif wrong_in_row >= 2:
+		Score.restarts += 1
+		get_tree().reload_current_scene()
+	elif wrong >= 5:
 		Score.restarts += 1
 		get_tree().reload_current_scene()
 	else:
+		wrong_in_row += 1
 		wrong += 1
 	print(wrong)
+	print(wrong_in_row)
 	item_index += 1
 	refresh_screen()
