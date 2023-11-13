@@ -7,14 +7,14 @@ var secs: int = 0
 var msec: int = 0
 
 # slider variable
-@onready var slider = $percentage_scale
+@onready var slider = $VBoxContainer/percentage_scale
 
 # question variables
-@onready var displayQuestion = $question
-@onready var displayDesc = $description
-@onready var displayAnsw = $actualPercentage
-@onready var showResultBtn = $showResult
-@onready var nextBtn = $nextBtn
+@onready var displayQuestion = $VBoxContainer/question
+@onready var displayDesc = $VBoxContainer/description
+@onready var displayAnsw = $VBoxContainer/actualPercentage
+@onready var showResultBtn = $VBoxContainer/HBoxContainer/showResult
+@onready var nextBtn = $VBoxContainer/HBoxContainer/nextBtn
 
 var dict = read_file("res://Missions/mission_1/mission1_activity/questions_answers.json")
 var item: Dictionary
@@ -25,11 +25,11 @@ func _ready():
 
 func refresh_screen():
 	slider.value = 0
-	$percent.text = "%0d" % slider.value + "%"
+	$VBoxContainer/percentage_scale/percent.text = "%0d" % slider.value + "%"
 	time = 10.0
 	set_process(true)
-	showResultBtn.hide()
-	nextBtn.hide()
+	showResultBtn.disabled = true
+	nextBtn.disabled = true
 	if item_index >= dict.size():
 		get_tree().change_scene_to_file("res://Missions/mission_1/mission1_activity/task3_end.tscn")
 	else:
@@ -41,9 +41,9 @@ func _process(delta):
 	msec = fmod(time, 1) * 100
 	secs = fmod(time, 60)
 	mins = fmod(time, 3600) / 60
-	$timer/mins.text = "%02d:" % mins
-	$timer/secs.text = "%02d." % secs
-	$timer/msec.text = "%03d" % msec
+	$VBoxContainer/timer/mins.text = "%02d:" % mins
+	$VBoxContainer/timer/secs.text = "%02d." % secs
+	$VBoxContainer/timer/msec.text = "%03d" % msec
 
 	if (mins == 0 && secs == 0 && msec == 0):
 		stop()
@@ -60,11 +60,11 @@ func show_description():
 	item = dict[item_index]
 	displayDesc.text = item.description
 	displayDesc.show()
-	nextBtn.show()
+	nextBtn.disabled = false
 		
 func show_question():
-	displayDesc.hide()
-	displayAnsw.hide()
+	displayDesc.text = ""
+	displayAnsw.text = ""
 	displayQuestion.show()
 	item = dict[item_index]
 	displayQuestion.text = item.question
@@ -85,8 +85,8 @@ func _on_show_result_pressed():
 	stop()
 
 func _on_percentage_scale_drag_ended(value_changed):
-	$percent.text = "%02d" % slider.value + "%"
-	showResultBtn.show()
+	$VBoxContainer/percentage_scale/percent.text = "%02d" % slider.value + "%"
+	showResultBtn.disabled = false
 
 func _on_next_btn_pressed():
 	item_index += 1
