@@ -40,6 +40,7 @@ offset_left = 179.0
 offset_top = 719.0
 offset_right = 370.0
 offset_bottom = 776.0
+theme_override_font_sizes/font_size = 20
 text = "Return to Cyberland"
 
 [connection signal="pressed" from="returnBtn" to="." method="_on_return_btn_pressed"]
