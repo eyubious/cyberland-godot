@@ -41,7 +41,7 @@ func _process(delta):
 	Score.mins = fmod(time, 3600) / 60
 	$VBoxContainer/timer/mins.text = "%02d:" % Score.mins
 	$VBoxContainer/timer/secs.text = "%02d." % Score.secs
-	$VBoxContainer/timer/msec.text = "%03d" % Score.msec
+	$VBoxContainer/timer/msec.text = "%02d" % Score.msec
 	
 	if (Score.mins == 0 && Score.secs == 0 && Score.msec == 0):
 		stop()
@@ -50,7 +50,7 @@ func stop() -> void:
 	set_process(false)
 	
 func format_time() -> String:
-	return "%02d:%02d.%03d" % [Score.mins, Score.secs, Score.msec]
+	return "%02d:%02d.%02d" % [Score.mins, Score.secs, Score.msec]
 	
 func show_question():
 	displayQuestion.show()
