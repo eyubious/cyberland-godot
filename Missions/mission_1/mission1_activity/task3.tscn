@@ -1,0 +1,55 @@
+[gd_scene load_steps=3 format=3 uid="uid://cmv70dsu486ok"]
+
+[ext_resource type="Script" path="res://Missions/mission_1/mission1_activity/task3.gd" id="1_iyjts"]
+[ext_resource type="Texture2D" uid="uid://b1iov6mmay580" path="res://Images/cityscape.png" id="2_m63rp"]
+
+[node name="task3" type="Node2D"]
+script = ExtResource("1_iyjts")
+
+[node name="backgroundCity" type="Sprite2D" parent="."]
+position = Vector2(289, 510)
+texture = ExtResource("2_m63rp")
+
+[node name="taskTitle" type="Label" parent="."]
+offset_left = 81.0
+offset_top = 43.0
+offset_right = 498.0
+offset_bottom = 104.0
+theme_override_font_sizes/font_size = 30
+text = " Testing Your Knowledge!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="gameDescription" type="Label" parent="."]
+offset_left = 64.0
+offset_top = 168.0
+offset_right = 504.0
+offset_bottom = 376.0
+theme_override_font_sizes/font_size = 25
+text = "The game will ask you to guess the rate that an event occurs.
+To play, slide the scale on the screen to make your guess. You only have ten seconds!
+
+
+After guessing, press the button or wait for the time to run out to see the right rate!"
+autowrap_mode = 3
+
+[node name="startQuiz" type="Button" parent="."]
+offset_left = 320.0
+offset_top = 912.0
+offset_right = 528.0
+offset_bottom = 946.0
+scale = Vector2(1.06132, 1.8378)
+theme_override_font_sizes/font_size = 20
+text = "START"
+
+[node name="MainMenu" type="Button" parent="."]
+offset_left = 32.0
+offset_top = 912.0
+offset_right = 165.0
+offset_bottom = 939.0
+scale = Vector2(1.59927, 2.34191)
+theme_override_font_sizes/font_size = 15
+text = "Cyberland"
+
+[connection signal="pressed" from="startQuiz" to="." method="_on_start_quiz_pressed"]
+[connection signal="pressed" from="MainMenu" to="." method="_on_main_menu_pressed"]

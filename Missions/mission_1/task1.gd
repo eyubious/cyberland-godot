@@ -29,5 +29,5 @@ func _on_button_pressed():
 
 func start_video_with_delay():
 	var video_player = $VideoStreamPlayer
-	await get_tree().create_timer(2).timeout # Wait for 3 seconds
+	await get_tree().create_timer(1).timeout # Wait for 1 seconds
 	video_player.play()  # Play the video after the delay
