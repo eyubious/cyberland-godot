@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://cqhg24jyiqphr"]
+[gd_scene load_steps=6 format=3 uid="uid://cqhg24jyiqphr"]
 
 [ext_resource type="Script" path="res://Missions/mission_1/task1.gd" id="1_a03ka"]
 [ext_resource type="VideoStream" path="res://Images/videoforgame.ogv" id="1_idbem"]
 [ext_resource type="Texture2D" uid="uid://b1iov6mmay580" path="res://Images/cityscape.png" id="2_5hxse"]
+[ext_resource type="FontVariation" uid="uid://cx8emjpdeq4ul" path="res://roboto_medium.tres" id="4_ovtf7"]
 
 [sub_resource type="Theme" id="Theme_5xxnx"]
 
@@ -17,11 +18,11 @@ position = Vector2(289, 510)
 texture = ExtResource("2_5hxse")
 
 [node name="taskTitle" type="Label" parent="."]
-offset_left = 105.0
+offset_left = 65.0
 offset_top = 62.0
-offset_right = 473.0
-offset_bottom = 96.0
-theme_override_font_sizes/font_size = 25
+offset_right = 513.0
+offset_bottom = 101.0
+theme_override_font_sizes/font_size = 30
 text = "Mission 1: Intro To Cyber Bullying"
 
 [node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
@@ -40,6 +41,8 @@ offset_left = 254.0
 offset_top = 821.0
 offset_right = 608.0
 offset_bottom = 898.0
+theme_override_fonts/font = ExtResource("4_ovtf7")
+theme_override_font_sizes/font_size = 30
 text = "Play Game!"
 
 [node name="replayBtn" type="Button" parent="VideoStreamPlayer"]
