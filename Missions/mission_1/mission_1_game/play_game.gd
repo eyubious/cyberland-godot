@@ -12,11 +12,12 @@ var dict = read_file("res://Missions/mission_1/mission_1_game/question_content.j
 var item: Dictionary
 var item_index: int = 0
 
-# question & answers variables
+# question, image & answers variables
 @onready var displayQuestion = $VBoxContainer/question
 @onready var displayAnswerChoices = $VBoxContainer/answerChoices
 @onready var message = $message
 @onready var healthBar = $VBoxContainer/progressBar
+@onready var image = $VBoxContainer/galleryImage
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -57,6 +58,8 @@ func show_question():
 	displayAnswerChoices.show()
 	displayAnswerChoices.clear()
 	item = dict[item_index]
+	image.texture = load(item.image)
+	image.show()
 	displayQuestion.text = item.question
 	var answers = item.answers
 	for answer in answers:

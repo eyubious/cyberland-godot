@@ -69,15 +69,6 @@ texture = ExtResource("4_vk772")
 expand_mode = 1
 stretch_mode = 4
 
-[node name="art2" type="TextureRect" parent="ScrollContainer/GridContainer"]
-custom_minimum_size = Vector2(200, 200)
-layout_mode = 2
-size_flags_horizontal = 0
-size_flags_vertical = 2
-texture = ExtResource("5_lusde")
-expand_mode = 1
-stretch_mode = 4
-
 [node name="art3" type="TextureRect" parent="ScrollContainer/GridContainer"]
 custom_minimum_size = Vector2(200, 200)
 layout_mode = 2
@@ -129,6 +120,15 @@ layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 2
 texture = ExtResource("11_76dkf")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="art2" type="TextureRect" parent="ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 2
+texture = ExtResource("5_lusde")
 expand_mode = 1
 stretch_mode = 4
 
@@ -300,6 +300,13 @@ text = "Question"
 horizontal_alignment = 1
 autowrap_mode = 3
 
+[node name="galleryImage" type="TextureRect" parent="VBoxContainer"]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+expand_mode = 1
+
 [node name="answerChoices" type="ItemList" parent="VBoxContainer"]
 custom_minimum_size = Vector2(450, 100)
 layout_mode = 2
@@ -328,9 +335,5 @@ size_flags_vertical = 6
 theme_override_font_sizes/font_size = 15
 step = 1.0
 rounded = true
-
-[node name="image0" type="Sprite2D" parent="."]
-position = Vector2(274, 533)
-scale = Vector2(0.2, 0.2)
 
 [connection signal="item_selected" from="VBoxContainer/answerChoices" to="." method="_on_answer_choices_item_selected"]
