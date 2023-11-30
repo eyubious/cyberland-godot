@@ -1,28 +1,7 @@
-[gd_scene load_steps=24 format=3 uid="uid://bch8pte3mb73t"]
+[gd_scene load_steps=3 format=3 uid="uid://bch8pte3mb73t"]
 
 [ext_resource type="Script" path="res://Missions/mission_1/mission_1_game/play_game.gd" id="1_te8np"]
 [ext_resource type="Texture2D" uid="uid://rs1mwl578p5e" path="res://Images/general_background_center_shine.png" id="2_csba5"]
-[ext_resource type="Texture2D" uid="uid://c53gc5lksegjp" path="res://Missions/mission_1/mission_1_game/art/1.jpg" id="3_j453n"]
-[ext_resource type="Texture2D" uid="uid://dqf57qy42bjjk" path="res://Missions/mission_1/mission_1_game/art/2.jpg" id="4_vk772"]
-[ext_resource type="Texture2D" uid="uid://dvptpqgh1eqgl" path="res://Missions/mission_1/mission_1_game/art/3.png" id="5_lusde"]
-[ext_resource type="Texture2D" uid="uid://dkyquoqgc5xn5" path="res://Missions/mission_1/mission_1_game/art/5.jpg" id="6_3lf1s"]
-[ext_resource type="Texture2D" uid="uid://cmdmlwej1hwll" path="res://Missions/mission_1/mission_1_game/art/4.png" id="6_3pxa8"]
-[ext_resource type="Texture2D" uid="uid://dkcslro3ytqq2" path="res://Missions/mission_1/mission_1_game/art/6.jpg" id="8_y6hbc"]
-[ext_resource type="Texture2D" uid="uid://cewqp7c42pthc" path="res://Missions/mission_1/mission_1_game/art/7.png" id="9_0213b"]
-[ext_resource type="Texture2D" uid="uid://tetggcex62b2" path="res://Missions/mission_1/mission_1_game/art/8.png" id="10_smxsn"]
-[ext_resource type="Texture2D" uid="uid://cdahb2imn6xrn" path="res://Missions/mission_1/mission_1_game/art/9.jpg" id="11_76dkf"]
-[ext_resource type="Texture2D" uid="uid://cki3t8asc347e" path="res://Missions/mission_1/mission_1_game/art/10.jpg" id="12_dvpej"]
-[ext_resource type="Texture2D" uid="uid://dxddc308k2usg" path="res://Missions/mission_1/mission_1_game/art/11.png" id="13_lo54a"]
-[ext_resource type="Texture2D" uid="uid://cku1662pnmf87" path="res://Missions/mission_1/mission_1_game/art/12.jpg" id="14_wa40o"]
-[ext_resource type="Texture2D" uid="uid://duk3648xp1xdj" path="res://Missions/mission_1/mission_1_game/art/13.jpg" id="15_fi7p5"]
-[ext_resource type="Texture2D" uid="uid://dp4smooyc2rvr" path="res://Missions/mission_1/mission_1_game/art/14.png" id="16_wbnln"]
-[ext_resource type="Texture2D" uid="uid://ddc6awumnygk5" path="res://Missions/mission_1/mission_1_game/art/15.png" id="17_uhwps"]
-[ext_resource type="Texture2D" uid="uid://b23icqb7aro0v" path="res://Missions/mission_1/mission_1_game/art/16.png" id="18_ilbyi"]
-[ext_resource type="Texture2D" uid="uid://8tl8eraapj1w" path="res://Missions/mission_1/mission_1_game/art/17.jpg" id="19_e4yx2"]
-[ext_resource type="Texture2D" uid="uid://dwbvgrqljsoyn" path="res://Missions/mission_1/mission_1_game/art/18.jpg" id="20_wijrl"]
-[ext_resource type="Texture2D" uid="uid://bj3qqkohwlbun" path="res://Missions/mission_1/mission_1_game/art/19.jpg" id="21_q37dl"]
-[ext_resource type="Texture2D" uid="uid://b0rctoe5ckp2g" path="res://Missions/mission_1/mission_1_game/art/20.jpg" id="22_bnk6g"]
-[ext_resource type="Texture2D" uid="uid://ce35fqs0qsx8x" path="res://Missions/mission_1/mission_1_game/art/21.png" id="23_4cby6"]
 
 [node name="play_game" type="Node2D"]
 script = ExtResource("1_te8np")
@@ -31,214 +10,6 @@ script = ExtResource("1_te8np")
 position = Vector2(288, 512)
 scale = Vector2(0.550143, 0.552022)
 texture = ExtResource("2_csba5")
-
-[node name="ScrollContainer" type="ScrollContainer" parent="."]
-visible = false
-custom_minimum_size = Vector2(576, 1024)
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_right = 576.0
-offset_bottom = 1024.0
-grow_horizontal = 2
-grow_vertical = 2
-horizontal_scroll_mode = 0
-
-[node name="GridContainer" type="GridContainer" parent="ScrollContainer"]
-layout_mode = 2
-size_flags_horizontal = 6
-size_flags_vertical = 6
-theme_override_constants/h_separation = 50
-theme_override_constants/v_separation = 25
-columns = 2
-
-[node name="art0" type="TextureRect" parent="ScrollContainer/GridContainer"]
-custom_minimum_size = Vector2(200, 200)
-layout_mode = 2
-size_flags_horizontal = 2
-size_flags_vertical = 2
-texture = ExtResource("3_j453n")
-expand_mode = 1
-
-[node name="art1" type="TextureRect" parent="ScrollContainer/GridContainer"]
-custom_minimum_size = Vector2(200, 200)
-layout_mode = 2
-size_flags_horizontal = 0
-size_flags_vertical = 2
-texture = ExtResource("4_vk772")
-expand_mode = 1
-stretch_mode = 4
-
-[node name="art2" type="TextureRect" parent="ScrollContainer/GridContainer"]
-custom_minimum_size = Vector2(200, 200)
-layout_mode = 2
-size_flags_horizontal = 0
-size_flags_vertical = 2
-texture = ExtResource("5_lusde")
-expand_mode = 1
-stretch_mode = 4
-
-[node name="art3" type="TextureRect" parent="ScrollContainer/GridContainer"]
-custom_minimum_size = Vector2(200, 200)
-layout_mode = 2
-size_flags_horizontal = 0
-size_flags_vertical = 2
-texture = ExtResource("6_3pxa8")
-expand_mode = 1
-stretch_mode = 4
-
-[node name="art4" type="TextureRect" parent="ScrollContainer/GridContainer"]
-custom_minimum_size = Vector2(200, 200)
-layout_mode = 2
-size_flags_horizontal = 0
-size_flags_vertical = 2
-texture = ExtResource("6_3lf1s")
-expand_mode = 1
-stretch_mode = 4
-
-[node name="art5" type="TextureRect" parent="ScrollContainer/GridContainer"]
-custom_minimum_size = Vector2(200, 100)
-layout_mode = 2
-size_flags_horizontal = 0
-size_flags_vertical = 2
-texture = ExtResource("8_y6hbc")
-expand_mode = 1
-stretch_mode = 4
-
-[node name="art6" type="TextureRect" parent="ScrollContainer/GridContainer"]
-custom_minimum_size = Vector2(200, 200)
-layout_mode = 2
-size_flags_horizontal = 0
-size_flags_vertical = 2
-texture = ExtResource("9_0213b")
-expand_mode = 1
-stretch_mode = 4
-
-[node name="art7" type="TextureRect" parent="ScrollContainer/GridContainer"]
-custom_minimum_size = Vector2(200, 200)
-layout_mode = 2
-size_flags_horizontal = 0
-size_flags_vertical = 2
-texture = ExtResource("10_smxsn")
-expand_mode = 1
-stretch_mode = 4
-
-[node name="art8" type="TextureRect" parent="ScrollContainer/GridContainer"]
-custom_minimum_size = Vector2(200, 200)
-layout_mode = 2
-size_flags_horizontal = 0
-size_flags_vertical = 2
-texture = ExtResource("11_76dkf")
-expand_mode = 1
-stretch_mode = 4
-
-[node name="art9" type="TextureRect" parent="ScrollContainer/GridContainer"]
-custom_minimum_size = Vector2(200, 200)
-layout_mode = 2
-size_flags_horizontal = 0
-size_flags_vertical = 2
-texture = ExtResource("12_dvpej")
-expand_mode = 1
-stretch_mode = 4
-
-[node name="art10" type="TextureRect" parent="ScrollContainer/GridContainer"]
-custom_minimum_size = Vector2(200, 200)
-layout_mode = 2
-size_flags_horizontal = 0
-size_flags_vertical = 2
-texture = ExtResource("13_lo54a")
-expand_mode = 1
-stretch_mode = 4
-
-[node name="art11" type="TextureRect" parent="ScrollContainer/GridContainer"]
-custom_minimum_size = Vector2(200, 200)
-layout_mode = 2
-size_flags_horizontal = 0
-size_flags_vertical = 2
-texture = ExtResource("14_wa40o")
-expand_mode = 1
-stretch_mode = 4
-
-[node name="art12" type="TextureRect" parent="ScrollContainer/GridContainer"]
-custom_minimum_size = Vector2(200, 200)
-layout_mode = 2
-size_flags_horizontal = 0
-size_flags_vertical = 2
-texture = ExtResource("15_fi7p5")
-expand_mode = 1
-stretch_mode = 4
-
-[node name="art13" type="TextureRect" parent="ScrollContainer/GridContainer"]
-custom_minimum_size = Vector2(200, 200)
-layout_mode = 2
-size_flags_horizontal = 0
-size_flags_vertical = 2
-texture = ExtResource("16_wbnln")
-expand_mode = 1
-stretch_mode = 4
-
-[node name="art14" type="TextureRect" parent="ScrollContainer/GridContainer"]
-custom_minimum_size = Vector2(200, 200)
-layout_mode = 2
-size_flags_horizontal = 0
-size_flags_vertical = 2
-texture = ExtResource("17_uhwps")
-expand_mode = 1
-stretch_mode = 4
-
-[node name="art15" type="TextureRect" parent="ScrollContainer/GridContainer"]
-custom_minimum_size = Vector2(200, 200)
-layout_mode = 2
-size_flags_horizontal = 0
-size_flags_vertical = 2
-texture = ExtResource("18_ilbyi")
-expand_mode = 1
-stretch_mode = 4
-
-[node name="art16" type="TextureRect" parent="ScrollContainer/GridContainer"]
-custom_minimum_size = Vector2(200, 200)
-layout_mode = 2
-size_flags_horizontal = 0
-size_flags_vertical = 2
-texture = ExtResource("19_e4yx2")
-expand_mode = 1
-stretch_mode = 4
-
-[node name="art17" type="TextureRect" parent="ScrollContainer/GridContainer"]
-custom_minimum_size = Vector2(200, 200)
-layout_mode = 2
-size_flags_horizontal = 0
-size_flags_vertical = 2
-texture = ExtResource("20_wijrl")
-expand_mode = 1
-stretch_mode = 4
-
-[node name="art18" type="TextureRect" parent="ScrollContainer/GridContainer"]
-custom_minimum_size = Vector2(200, 200)
-layout_mode = 2
-size_flags_horizontal = 0
-size_flags_vertical = 2
-texture = ExtResource("21_q37dl")
-expand_mode = 1
-stretch_mode = 4
-
-[node name="art19" type="TextureRect" parent="ScrollContainer/GridContainer"]
-custom_minimum_size = Vector2(200, 200)
-layout_mode = 2
-size_flags_horizontal = 0
-size_flags_vertical = 2
-texture = ExtResource("22_bnk6g")
-expand_mode = 1
-stretch_mode = 4
-
-[node name="art20" type="TextureRect" parent="ScrollContainer/GridContainer"]
-custom_minimum_size = Vector2(200, 200)
-layout_mode = 2
-size_flags_horizontal = 0
-size_flags_vertical = 2
-texture = ExtResource("23_4cby6")
-expand_mode = 1
-stretch_mode = 4
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 custom_minimum_size = Vector2(576, 1024)
@@ -300,6 +71,13 @@ text = "Question"
 horizontal_alignment = 1
 autowrap_mode = 3
 
+[node name="galleryImage" type="TextureRect" parent="VBoxContainer"]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+expand_mode = 1
+
 [node name="answerChoices" type="ItemList" parent="VBoxContainer"]
 custom_minimum_size = Vector2(450, 100)
 layout_mode = 2
@@ -328,9 +106,5 @@ size_flags_vertical = 6
 theme_override_font_sizes/font_size = 15
 step = 1.0
 rounded = true
-
-[node name="image0" type="Sprite2D" parent="."]
-position = Vector2(274, 533)
-scale = Vector2(0.2, 0.2)
 
 [connection signal="item_selected" from="VBoxContainer/answerChoices" to="." method="_on_answer_choices_item_selected"]

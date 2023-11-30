@@ -1,6 +1,7 @@
 [
 	{
 		"question" : "What is cyberbullying?",
+		"image" : "res://Missions/mission_1/mission_1_game/art/1.jpg",
 		"answers" : [
 			"Harrassment or bullying that occurs through electronic devices",
 			"Physical bullying towards the person",
@@ -10,6 +11,7 @@
 	},
 	{
 		"question" : "Which of the following is an example of cyberbullying?",
+		"image" : "res://Missions/mission_1/mission_1_game/art/2.jpg",
 		"answers" : [
 			"Having a disagreement with a friend",
 			"Playing online games with people you don't know",
@@ -19,6 +21,7 @@
 	},
 	{
 		"question" : "Who can be victims of cyberbullying?",
+		"image" : "res://Missions/mission_1/mission_1_game/art/3.png",
 		"answers" : [
 			"Children only",
 			"Everyone, regardless of age",
@@ -28,6 +31,7 @@
 	},
 	{
 		"question" : "Does cyberbullying only happen to women?",
+		"image" : "res://Missions/mission_1/mission_1_game/art/4.png",
 		"answers" : [
 			"Yes, it only happens to women",
 			"No, it happens to men too"
@@ -36,6 +40,7 @@
 	},
 	{
 		"question" : "Which of the following is not cyberbullying?",
+		"image" : "res://Missions/mission_1/mission_1_game/art/5.jpg",
 		"answers" : [
 			"Making derogatory and hurtful comments on social media",
 			"Publishing your friend's private information on the internet without permission",
@@ -45,6 +50,7 @@
 	},
 	{
 		"question" : "Is cyberbullying a crime?",
+		"image" : "res://Missions/mission_1/mission_1_game/art/6.jpg",
 		"answers" : [
 			"Cyberbullying does not constitute a crime in law",
 			"Cyberbullying is a crime only for adults",
@@ -54,6 +60,7 @@
 	},
 	{
 		"question" : "Cemre knows that Deniz is being cyberbullied, but she does not what to leave the WhatsApp group. She ignores the situation because she is afraid of being removed and left without friends. Cemre is ...",
+		"image" : "res://Missions/mission_1/mission_1_game/art/7.png",
 		"answers" : [
 			"a cyberbully",
 			"a cyber defender",
@@ -63,6 +70,7 @@
 	},
 	{
 		"question" : "Emre shares a special photo of his friend Görkem on his Instagram story. Görkem is very embarrased because everyone has seen it. Görkem is ...",
+		"image" : "res://Missions/mission_1/mission_1_game/art/8.png",
 		"answers" : [
 			"a cyberbully",
 			"a cyber victim",
@@ -72,6 +80,7 @@
 	},
 	{
 		"question" : "When Gizem finds out that her best friend is being cyberbullied, she wants to tell someone she trusts and think will help them. Gizem is ...",
+		"image" : "res://Missions/mission_1/mission_1_game/art/9.jpg",
 		"answers" : [
 			"a cyberbullying defender",
 			"a cyberbully",
@@ -81,6 +90,7 @@
 	},
 	{
 		"question" : "Cam asks Kerem for permission to share the photo they took together on his social media account. Cam is ...",
+		"image" : "res://Missions/mission_1/mission_1_game/art/10.jpg",
 		"answers" : [
 			"a cyberbully",
 			"a cyberbuddy",
@@ -90,6 +100,7 @@
 	},
 	{
 		"question" : "Yusuf spread a rumour about Cansu on Twitter. Cansu is ...",
+		"image" : "res://Missions/mission_1/mission_1_game/art/11.png",
 		"answers" : [
 			"a cyber victim",
 			"a cyberbully",
@@ -99,6 +110,7 @@
 	},
 	{
 		"question" : "Ahmet was disturbed by some of the social media posts of Gökhan, with whom he studied with at the same school, and stopped following him. Ahmet is ...",
+		"image" : "res://Missions/mission_1/mission_1_game/art/12.jpg",
 		"answers" : [
 			"cyberbullying",
 			"not cyberbullying"
@@ -107,6 +119,7 @@
 	},
 	{
 		"question" : "Buse shows Kağan private photos of a friend in their class. Kağan tells his friend that what he did was wrong and does not look at the photos he showed him. Kağan is ...",
+		"image" : "res://Missions/mission_1/mission_1_game/art/13.jpg",
 		"answers" : [
 			"a cyber defender",
 			"a cyberbully",
@@ -116,6 +129,7 @@
 	}, 
 	{
 		"question" : "When Esra saw her friend's TikTok video, which received many likes, she created a fake profile and sent messages to annoy them. Esra is ...",
+		"image" : "res://Missions/mission_1/mission_1_game/art/14.png",
 		"answers" : [
 			"a cyberbully",
 			"a cyber victim",
@@ -125,6 +139,7 @@
 	},
 	{
 		"question" : "Melissa started a group chat without Cem and sent a lot of unpleasant messages about Cam. Is this cyberbullying?",
+		"image" : "res://Missions/mission_1/mission_1_game/art/15.png",
 		"answers" : [
 			"Yes",
 			"No",
@@ -134,6 +149,7 @@
 	},
 	{
 		"question" : "Cem heard people talking badly about him in the group chat and shared the photos he secretly took of Melisa. Is this cyberbullying?",
+		"image" : "res://Missions/mission_1/mission_1_game/art/16.png",
 		"answers" : [
 			"No",
 			"Yes", 
@@ -143,6 +159,7 @@
 	},
 	{
 		"question" : "Ash saw a post from a friend who he thought was not dressed well and shared the screenshot in a groupchat. Is this cyberbullying?",
+		"image" : "res://Missions/mission_1/mission_1_game/art/17.jpg",
 		"answers" : [
 			"This is cyberbullying",
 			"This is not cyberbullying",
@@ -152,6 +169,7 @@
 	},
 	{
 		"question" : "What does a cyber advocate do when faced with cyberbullying?",
+		"image" : "res://Missions/mission_1/mission_1_game/art/18.jpg",
 		"answers" : [
 			"Remains silent and does not interfere",
 			"Supports cyberbullying to avoid losing friendship",
@@ -161,6 +179,7 @@
 	},
 	{
 		"question" : "What should we do when we witness cyberbullying?",
+		"image" : "res://Missions/mission_1/mission_1_game/art/19.jpg",
 		"answers" : [
 			"We must report to a trusted adult or authorized person",
 			"If we love the cyberbully, we should support whatever they do",
@@ -170,6 +189,7 @@
 	},
 	{
 		"question" : "Is cyberbulling done only by people we don't know?",
+		"image" : "res://Missions/mission_1/mission_1_game/art/20.jpg",
 		"answers" : [
 			"Yes, it is done by people we don't know",
 			"No, oftentimes you know cyberbullies in real life"
@@ -178,6 +198,7 @@
 	},
 	{
 		"question" : "Is cyberbullying harmful?",
+		"image" : "res://Missions/mission_1/mission_1_game/art/21.png",
 		"answers" : [
 			"Yes, it can have long-lasting effects on the cyber victim",
 			"No, it does not affect the cyber victim psychologically",
