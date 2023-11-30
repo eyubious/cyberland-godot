@@ -6,6 +6,7 @@ var time: float =  300.0
 # score variables
 var wrong: int = 0
 var wrong_in_row: int = 0
+var total: float = 0.0
 
 # load data to dictionary
 var dict = read_file("res://Missions/mission_1/mission_1_game/question_content.json")
@@ -76,6 +77,7 @@ func read_file(file):
 func _on_answer_choices_item_selected(index):
 	if index == item.i_correct:
 		Score.correct += 1
+		total += 1
 		wrong_in_row = 0
 	elif wrong_in_row >= 2:
 		Score.restarts += 1
@@ -84,8 +86,10 @@ func _on_answer_choices_item_selected(index):
 		Score.restarts += 1
 		get_tree().reload_current_scene()
 	else:
+		total -= 1
 		wrong_in_row += 1
 		wrong += 1
-	healthBar.value = Score.correct / dict.size() * 100
+	# healthBar.value = Score.correct / dict.size() * 100 # does not take into account wrong answers
+	healthBar.value = total / dict.size() * 100
 	item_index += 1
 	refresh_screen()
