@@ -33,7 +33,7 @@ The mobile application, Cyberland, aims to teach high school students about cybe
 
 The application will open to a page with seven icons, each describing different ‘levels the user must go through to complete their learning and protect Cyberland. Users can navigate to Cyberland by clicking on one of the seven icons and then watch their city grow and protect itself against cyberbullying behaviors.
 
-### Build With
+### Built With
 * [Godot Game Engine](https://godotengine.org/)
 * [GDScript](https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/index.html)
 
