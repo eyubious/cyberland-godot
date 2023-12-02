@@ -63,4 +63,4 @@ The application will open to a page with seven icons, each describing different 
 
 <!-- LICENSE -->
 ## License
-Distributed under the MIT License. See LICENSE.txt for more information.
+Distributed under the MIT License. See `LICENSE.txt` for more information.
