@@ -46,7 +46,16 @@ The application will open to a page with seven icons, each describing different 
 
 
 ### Installation
-
+1. Install Godot
+   [Godot Download Docs](https://godotengine.org/download/)
+3. Clone the repo
+   ```sh
+   git clone https://github.com/github_username/repo_name.git
+   ```
+4. Install NPM packages
+   ```sh
+   npm install
+   ```
 
 <!-- USAGE EXAMPLES -->
 ## Usage
@@ -54,3 +63,4 @@ The application will open to a page with seven icons, each describing different 
 
 <!-- LICENSE -->
 ## License
+Distributed under the MIT License. See `LICENSE.txt` for more information.
