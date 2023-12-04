@@ -37,10 +37,10 @@ expand = true
 
 [node name="continueBtn" type="Button" parent="VideoStreamPlayer"]
 layout_mode = 0
-offset_left = 254.0
-offset_top = 821.0
-offset_right = 608.0
-offset_bottom = 898.0
+offset_left = 503.05
+offset_top = 825.596
+offset_right = 857.05
+offset_bottom = 902.596
 theme_override_fonts/font = ExtResource("4_ovtf7")
 theme_override_font_sizes/font_size = 30
 text = "Play Game!"
@@ -54,5 +54,15 @@ offset_right = 602.033
 offset_bottom = 777.441
 text = "Play/Pause"
 
+[node name="back" type="Button" parent="VideoStreamPlayer"]
+layout_mode = 0
+offset_left = 51.8608
+offset_top = 824.456
+offset_right = 96.8608
+offset_bottom = 855.456
+scale = Vector2(4.41989, 2.40319)
+text = "Back"
+
 [connection signal="pressed" from="VideoStreamPlayer/continueBtn" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="VideoStreamPlayer/replayBtn" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="VideoStreamPlayer/back" to="." method="_on_back_pressed"]

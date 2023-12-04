@@ -31,3 +31,7 @@ func start_video_with_delay():
 	var video_player = $VideoStreamPlayer
 	await get_tree().create_timer(1).timeout # Wait for 1 seconds
 	video_player.play()  # Play the video after the delay
+
+
+func _on_back_pressed():
+	get_tree().change_scene_to_file("res://cyberland_map.tscn")
