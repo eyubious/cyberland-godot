@@ -47,12 +47,14 @@ The application will open to a page with seven icons, each describing different 
 
 ### Installation
 1. Install Godot
-   [Godot Download Docs](https://godotengine.org/download/)
-3. Clone the repo
+
+[Godot Download Docs](https://godotengine.org/download/)
+
+2. Clone the repo
    ```sh
    git clone https://github.com/github_username/repo_name.git
    ```
-4. Install NPM packages
+3. Install NPM packages
    ```sh
    npm install
    ```
