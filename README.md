@@ -54,9 +54,9 @@ The application will open to a page with seven icons, each describing different 
    ```sh
    git clone https://github.com/github_username/repo_name.git
    ```
-3. Install NPM packages
-   ```sh
-   npm install
+3. Run the project
+   ```
+   
    ```
 
 <!-- USAGE EXAMPLES -->
