@@ -17,7 +17,6 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
     <li><a href="#license">License</a></li>
   </ol>
 </details>
@@ -58,10 +57,6 @@ The application will open to a page with seven icons, each describing different 
 4. Select ```Browse``` and find the file location of your repository
 5. Select ```Import and Edit```
 6. You will now be able to view and edit the project
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
 
 <!-- LICENSE -->
 ## License
