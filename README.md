@@ -54,10 +54,10 @@ The application will open to a page with seven icons, each describing different 
    ```sh
    git clone https://github.com/github_username/repo_name.git
    ```
-3. Run the project
-   ```
-   
-   ```
+3. Open Godot and select ```Import```
+4. Select ```Browse``` and find the file location of your repository
+5. Select ```Import and Edit```
+6. You will now be able to view and edit the project
 
 <!-- USAGE EXAMPLES -->
 ## Usage
