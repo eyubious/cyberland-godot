@@ -22,8 +22,10 @@ var item_index: int = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	Score.correct = 0
+	Score.correct = 0 # Variable from global script res://Missions/mission_1/mission_1_game/score.gd, resets when game restarts
 	time = 300.0
+	
+	# Time variables from global script res://Missions/mission_1/mission_1_game/score.gd
 	Score.mins = 0
 	Score.secs = 0
 	Score.msec = 0
@@ -73,7 +75,8 @@ func read_file(file):
 	var json_as_text = FileAccess.get_file_as_string(file)
 	var json_as_dict = JSON.parse_string(json_as_text)
 	return json_as_dict
-	
+
+
 func _on_answer_choices_item_selected(index):
 	if index == item.i_correct:
 		Score.correct += 1

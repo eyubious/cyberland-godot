@@ -4,7 +4,6 @@ var video_player : VideoStreamPlayer
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	
 	start_video_with_delay()
 
 
@@ -16,18 +15,8 @@ func _process(delta):
 func _on_button_pressed():
 	get_tree().change_scene_to_file("res://Missions/mission_1/mission_1_game/game.tscn")
 
-#code if you want play/stop but if you resume video will start all over.
-#func _on_button_2_pressed():
-#	var video_player = $VideoStreamPlayer
-#	if video_player.is_playing():
-#		video_player.stop()  # Pause the video if it's currently playing
-#	else:
-#		video_player.play()  # Resume the video if it's currently paused
-	
-#TODO find a way to make button appear after video is done 
-
-
+# Start video with slight delay to allow for adjustments
 func start_video_with_delay():
 	var video_player = $VideoStreamPlayer
-	await get_tree().create_timer(1).timeout # Wait for 1 seconds
+	await get_tree().create_timer(.25).timeout # Wait for .25 second
 	video_player.play()  # Play the video after the delay

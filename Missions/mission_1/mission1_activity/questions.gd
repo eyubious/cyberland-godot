@@ -55,13 +55,15 @@ func stop() -> void:
 
 func format_time() -> String:
 	return "%02d:%02d.%02d" % [mins, secs, msec]
-		
+
+# Show answer description after selecting a percentage
 func show_description():
 	item = dict[item_index]
 	displayDesc.text = item.description
 	displayDesc.show()
 	nextBtn.disabled = false
-		
+
+# Display question from json
 func show_question():
 	displayDesc.text = ""
 	displayAnsw.text = ""
@@ -69,6 +71,7 @@ func show_question():
 	item = dict[item_index]
 	displayQuestion.text = item.question
 
+# Display the answers from json
 func show_answer():
 	item = dict[item_index]
 	displayAnsw.text = item.answer
@@ -84,6 +87,7 @@ func _on_show_result_pressed():
 	show_answer()
 	stop()
 
+# Handle the percent scale behavior
 func _on_percentage_scale_drag_ended(value_changed):
 	$VBoxContainer/PercentVBox/percent.text = "%02d" % slider.value + "%"
 	showResultBtn.disabled = false
