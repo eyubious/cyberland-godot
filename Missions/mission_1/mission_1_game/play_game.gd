@@ -18,6 +18,7 @@ var item_index: int = 0
 @onready var displayAnswerChoices = $VBoxContainer/answerChoices
 @onready var message = $message
 @onready var healthBar = $VBoxContainer/progressBar
+@onready var imageBackground = $VBoxContainer/galleryImageBackground
 @onready var image = $VBoxContainer/galleryImage
 
 # Called when the node enters the scene tree for the first time.
@@ -62,7 +63,7 @@ func show_question():
 	displayAnswerChoices.clear()
 	item = dict[item_index]
 	image.texture = load(item.image)
-	image.show()
+	$VBoxContainer/galleryImage/AnimationPlayer.play()
 	displayQuestion.text = item.question
 	var answers = item.answers
 	for answer in answers:

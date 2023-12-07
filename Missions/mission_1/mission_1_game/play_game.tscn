@@ -1,7 +1,44 @@
-[gd_scene load_steps=3 format=3 uid="uid://bch8pte3mb73t"]
+[gd_scene load_steps=6 format=3 uid="uid://bch8pte3mb73t"]
 
 [ext_resource type="Script" path="res://Missions/mission_1/mission_1_game/play_game.gd" id="1_te8np"]
 [ext_resource type="Texture2D" uid="uid://rs1mwl578p5e" path="res://Images/general_background_center_shine.png" id="2_csba5"]
+
+[sub_resource type="Animation" id="Animation_5j343"]
+resource_name = "artAnimation"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.469956, 1.42387),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-236, 307), Vector2(188, 312)]
+}
+
+[sub_resource type="Animation" id="Animation_xweko"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-236, 307)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_jy7op"]
+_data = {
+"RESET": SubResource("Animation_xweko"),
+"artAnimation": SubResource("Animation_5j343")
+}
 
 [node name="play_game" type="Node2D"]
 script = ExtResource("1_te8np")
@@ -72,6 +109,20 @@ horizontal_alignment = 1
 autowrap_mode = 3
 
 [node name="galleryImage" type="TextureRect" parent="VBoxContainer"]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+expand_mode = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="VBoxContainer/galleryImage"]
+autoplay = "artAnimation"
+libraries = {
+"": SubResource("AnimationLibrary_jy7op")
+}
+
+[node name="galleryImageBackground" type="TextureRect" parent="VBoxContainer"]
+visible = false
 custom_minimum_size = Vector2(200, 200)
 layout_mode = 2
 size_flags_horizontal = 4
