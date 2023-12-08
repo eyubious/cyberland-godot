@@ -51,7 +51,7 @@ The application will open to a page with seven icons, each describing different 
 
 2. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/mariana-perezh/cyberland-godot.git
    ```
 3. Open Godot and select ```Import```
 4. Select ```Browse``` and find the file location of your repository
