@@ -13,7 +13,6 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
@@ -39,11 +38,6 @@ The application will open to a page with seven icons, each describing different 
 
 <!-- GETTING STARTED -->
 ## Getting Started
-
-
-### Prerequisites
-
-
 ### Installation
 1. Install Godot
 
