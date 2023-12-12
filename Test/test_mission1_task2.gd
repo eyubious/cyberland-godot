@@ -1,12 +1,48 @@
 extends "res://addons/gut/test.gd"
 
-var gameScene = preload("res://Missions/mission_1/mission_1_game/play_game.gd")
+# Authors: Kaival, William
 
-func test_assert_eq_number_not_equal():
-	assert_eq(1, 2, "Should fail.  1 != 2")
+var gameScene = load("res://Missions/mission_1/mission_1_game/play_game.tscn")
+var gameScript = load("res://Missions/mission_1/mission_1_game/play_game.gd")
+var score = load("res://Missions/mission_1/mission_1_game/score.gd")
 
-func test_assert_eq_number_equal():
-	assert_eq('asdf', 'asdf', "Should pass")
+# Getting necessary data to test
+var test_data = {
+		"question" : "What is cyberbullying?",
+		"image" : "res://Missions/mission_1/mission_1_game/art/1.jpg",
+		"answers" : [
+			"Harrassment or bullying that occurs through electronic devices",
+			"Physical bullying towards the person",
+			"Bullying that occurs only verbally"
+			],
+		"i_correct" : 0
+	}
+	
+var starting_score = {
+	correct = 0.0,
+	wrong = 0,
+	wrong_in_row = 0
+}
+
+func before_each():
+	gameScene = gameScene.new()
+	gameScript = gameScript.new()
+	score = score.new()
+
+# func test_point_addition():
+	
+	
+# func test_point_subtraction():
+	
+	
+# func test_answer_item_click():
+	
+	
+# func test_answer_correct():
+	
+	
+# fuct test_answer_incorrect():
+	
 
 func test_assert_true_with_true():
 	assert_true(true, "Should pass, true is true")
@@ -32,10 +68,4 @@ func test_run():
 func _on_button_test_pressed():
 	# Assert the expected behavior after the button press
 	assert(true, "Button press test passed!")
-
-
-
-
-
-
 
