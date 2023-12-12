@@ -4,6 +4,7 @@ var gameScene = preload("res://Missions/mission_1/mission_1_game/play_game.tscn"
 var gameScript = load("res://Missions/mission_1/mission_1_game/play_game.gd")
 var score = load("res://Missions/mission_1/mission_1_game/score.gd")
 
+# Getting necessary data to test
 var test_data = {
 		"question" : "What is cyberbullying?",
 		"image" : "res://Missions/mission_1/mission_1_game/art/1.jpg",
@@ -14,6 +15,12 @@ var test_data = {
 			],
 		"i_correct" : 0
 	}
+	
+var starting_score = {
+	correct = 0.0,
+	wrong = 0,
+	wrong_in_row = 0
+}
 
 # func test_point_addition():
 	
