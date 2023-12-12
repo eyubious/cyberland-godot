@@ -1,6 +1,6 @@
 extends "res://addons/gut/test.gd"
 
-var gameScene = preload("res://Missions/mission_1/mission_1_game/play_game.tscn")
+var gameScene = load("res://Missions/mission_1/mission_1_game/play_game.tscn")
 var gameScript = load("res://Missions/mission_1/mission_1_game/play_game.gd")
 var score = load("res://Missions/mission_1/mission_1_game/score.gd")
 
@@ -21,6 +21,11 @@ var starting_score = {
 	wrong = 0,
 	wrong_in_row = 0
 }
+
+func before_each():
+	gameScene = gameScene.new()
+	gameScript = gameScript.new()
+	score = score.new()
 
 # func test_point_addition():
 	
