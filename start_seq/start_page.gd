@@ -1,5 +1,6 @@
 extends Node2D
 
+signal press
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -12,4 +13,5 @@ func _process(delta):
 
 func _on_start_btn_pressed():
 	get_tree().change_scene_to_file("res://main_menu.tscn")
+	emit_signal("press")
 
